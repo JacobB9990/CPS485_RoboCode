@@ -1,0 +1,22 @@
+Analyzing & Adapting Tank: 
+
+Use reinforcement learning methods to create a tank that is capable of beating any other robot. The main strategy I want to see displayed is that of an analyzer. It should initially try to observe the enemy tanks and categorize them by how they act. With enough training and exposure to different enemy types, it should have cultivated an approach to counter all other types of tanks. So, when it enters the playground, it will first analyze the others while keeping it distance, then it should alter its strategy to best handle whatever enemy it encounters.  
+
+ 
+
+Short Term Goals: 
+
+-Establish a decent baseline tank which I can add RL methods to 
+
+-Set up playground to test 
+
+-Sample robot types to test against. Start with simple bots that have clear weaknesses to test the tanks' ability to counter  
+
+
+Long Term Goals: 
+
+-Ability to distinguish the type of opponent tank and adapt strategy to best handle the current enemy 
+
+-Establish a robust population of tanks with different strategies  
+
+-Train through population of tanks until all counter methods have been discovered 
