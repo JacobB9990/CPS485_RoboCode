@@ -12,6 +12,8 @@ Short Term Goals:
 
 -Sample robot types to test against. Start with simple bots that have clear weaknesses to test the tanks' ability to counter  
 
+-Create a connection between Robocode and our model 
+
 
 Long Term Goals: 
 
@@ -20,3 +22,8 @@ Long Term Goals:
 -Establish a robust population of tanks with different strategies  
 
 -Train through population of tanks until all counter methods have been discovered 
+
+
+Current/Potential Issues: 
+
+-Might have an issue with python connection after round ends. Needs to maintain connection round after round 
