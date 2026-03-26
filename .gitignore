@@ -88,3 +88,18 @@ Thumbs.db
 *.tmp
 *.bak
 *.swp
+
+
+# RL training data (generated at runtime)
+Jacob/experiences/*.jsonl
+Jacob/models/*.pt
+Old/
+Jacob/SARSA/*.jsonl
+Jacob/SARSA/*.json
+/Jacob/Jacob3_0/test.md
+/Jacob/Jacob3_0/SETUP.md
+/Jacob/SARSA/steps.md
+/Jacob/SARSA/Notes.md
+/Jacob/Jacob3_0/README.md
+/Jacob/Jacob2_0/notes.md
+/Jacob/Jacob3_0/QUICKSTART.txt
