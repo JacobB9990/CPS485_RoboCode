@@ -71,9 +71,14 @@ class DQNBot(Bot):
         memory_capacity: int = 10000,
         weights_path: str = "dqn_weights.pt",
         log_path: str = "dqn_training_log.jsonl",
+        eval_mode: bool = False,
+        eval_epsilon: float = 0.0,
     ) -> None:
         super().__init__()
         self.log_path = log_path
+        self.eval_mode = eval_mode
+        self.eval_episodes = 0
+        self.eval_wins = 0
         self.agent = DQNAgent(
             n_observations=STATE_DIM,
             n_actions=N_ACTIONS,
@@ -87,6 +92,11 @@ class DQNBot(Bot):
             memory_capacity=memory_capacity,
             weights_path=weights_path,
         )
+
+        if self.eval_mode:
+            self.agent.set_eval_mode(epsilon=eval_epsilon)
+        else:
+            self.agent.set_train_mode()
 
         self.local_tick = 0
         self.last_scan: LastScan | None = None
@@ -102,17 +112,21 @@ class DQNBot(Bot):
     def run(self) -> None:
         """Main episode loop."""
         self.episode_number += 1
+        if self.eval_mode:
+            self.eval_episodes += 1
         self.local_tick = 0
         self.prev_state = None
         self.prev_action = None
         self.step_reward = 0.0
         self.episode_reward = 0.0
 
-        self.agent.on_episode_start()
+        if not self.eval_mode:
+            self.agent.on_episode_start()
 
         print(
             f"[DQNBot] Episode {self.episode_number} | "
-            f"eps_end={(0.05 + (0.9 - 0.05) * math.exp(-self.agent.steps_done / 2500)):.3f} | "
+            f"mode={'eval' if self.eval_mode else 'train'} | "
+            f"epsilon={self.agent.current_epsilon():.3f} | "
             f"buffer={len(self.agent.memory)}"
         )
 
@@ -232,26 +246,35 @@ class DQNBot(Bot):
         terminal_reward = 1.0 if won else -1.0
         self.step_reward += terminal_reward
 
+        if self.eval_mode and won:
+            self.eval_wins += 1
+
         if self.prev_state is not None and self.prev_action is not None:
-            self.agent.push_transition(
-                self.prev_state,
-                self.prev_action,
-                np.zeros(STATE_DIM, dtype=np.float32),
-                self.step_reward,
-                done=True,
-            )
+            if not self.eval_mode:
+                self.agent.push_transition(
+                    self.prev_state,
+                    self.prev_action,
+                    np.zeros(STATE_DIM, dtype=np.float32),
+                    self.step_reward,
+                    done=True,
+                )
             self.episode_reward += self.step_reward
 
-        self.agent.on_episode_end(won)
+        if not self.eval_mode:
+            self.agent.on_episode_end(won)
 
-        win_rate = (
-            self.agent.wins / self.agent.episode if self.agent.episode > 0 else 0.0
-        )
+        if self.eval_mode:
+            win_rate = self.eval_wins / self.eval_episodes if self.eval_episodes > 0 else 0.0
+        else:
+            win_rate = self.agent.wins / self.agent.episode if self.agent.episode > 0 else 0.0
+
         log_row = {
             "episode": self.episode_number,
             "won": won,
             "total_reward": round(self.episode_reward, 3),
             "steps": self.local_tick,
+            "mode": "eval" if self.eval_mode else "train",
+            "epsilon": round(self.agent.current_epsilon(), 4),
             "buffer_size": len(self.agent.memory),
             "win_rate": round(win_rate, 3),
             "training_steps": self.agent.steps_done,
@@ -266,32 +289,32 @@ class DQNBot(Bot):
 
     # ─── Events ───
 
-    def on_scanned_bot(self, e: ScannedBotEvent) -> None:
+    def on_scanned_bot(self, scanned_bot_event: ScannedBotEvent) -> None:
         self.last_scan = LastScan(
-            x=float(e.x),
-            y=float(e.y),
-            energy=float(e.energy),
+            x=float(scanned_bot_event.x),
+            y=float(scanned_bot_event.y),
+            energy=float(scanned_bot_event.energy),
             turn=self.local_tick,
         )
 
-    def on_hit_by_bullet(self, e: HitByBulletEvent) -> None:
-        power = float(getattr(getattr(e, "bullet", None), "power", 1.0))
+    def on_hit_by_bullet(self, hit_by_bullet_event: HitByBulletEvent) -> None:
+        power = float(getattr(getattr(hit_by_bullet_event, "bullet", None), "power", 1.0))
         damage = _bullet_damage(power)
         self.step_reward -= 0.025 * damage
 
-    def on_bullet_hit(self, e) -> None:
-        power = float(getattr(getattr(e, "bullet", None), "power", 1.0))
+    def on_bullet_hit(self, bullet_hit_bot_event) -> None:
+        power = float(getattr(getattr(bullet_hit_bot_event, "bullet", None), "power", 1.0))
         damage = _bullet_damage(power)
         self.step_reward += 0.02 * damage
 
-    def on_hit_wall(self, e: HitWallEvent) -> None:
+    def on_hit_wall(self, bot_hit_wall_event: HitWallEvent) -> None:
         self.step_reward -= 0.05
 
-    def on_won_round(self, e: WonRoundEvent) -> None:
+    def on_won_round(self, won_round_event: WonRoundEvent) -> None:
         self._finalize_episode(won=True)
         self.turn_right(360)
 
-    def on_death(self, e: DeathEvent) -> None:
+    def on_death(self, death_event: DeathEvent) -> None:
         self._finalize_episode(won=False)
 
     # ─── Logging ───
@@ -323,6 +346,17 @@ def main() -> None:
         "--log-path",
         default=os.path.join(os.path.dirname(__file__), "dqn_training_log.jsonl"),
     )
+    parser.add_argument(
+        "--eval",
+        action="store_true",
+        help="Run in evaluation mode (no online learning/checkpoint updates).",
+    )
+    parser.add_argument(
+        "--eval-epsilon",
+        type=float,
+        default=0.0,
+        help="Fixed epsilon used during --eval (default: 0.0).",
+    )
     args = parser.parse_args()
 
     bot = DQNBot(
@@ -336,6 +370,8 @@ def main() -> None:
         memory_capacity=args.memory_capacity,
         weights_path=args.weights_path,
         log_path=args.log_path,
+        eval_mode=args.eval,
+        eval_epsilon=args.eval_epsilon,
     )
     bot.start()
 

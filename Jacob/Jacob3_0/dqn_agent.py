@@ -86,6 +86,8 @@ class DQNAgent:
         self.eps_end = eps_end
         self.eps_decay_steps = eps_decay_steps
         self.weights_path = weights_path
+        self.training_enabled = True
+        self.fixed_epsilon: float | None = None
 
         # Policy and target networks
         self.policy_net = DQN(n_observations, n_actions).to(self.device)
@@ -105,9 +107,7 @@ class DQNAgent:
     def select_action(self, state: np.ndarray) -> int:
         """Epsilon-greedy action selection."""
         # Compute epsilon: decay from eps_start to eps_end over eps_decay_steps
-        eps = self.eps_end + (self.eps_start - self.eps_end) * np.exp(
-            -1.0 * self.steps_done / self.eps_decay_steps
-        )
+        eps = self.current_epsilon()
 
         if random.random() < eps:
             return random.randint(0, self.n_actions - 1)
@@ -121,6 +121,9 @@ class DQNAgent:
         self, state: np.ndarray, action: int, next_state: np.ndarray, reward: float, done: bool
     ) -> None:
         """Store transition and train if buffer is full enough."""
+        if not self.training_enabled:
+            return
+
         self.memory.push(state, action, next_state, reward, done)
         self.steps_done += 1
 
@@ -178,6 +181,25 @@ class DQNAgent:
         if won:
             self.wins += 1
         self._save()
+
+    def current_epsilon(self) -> float:
+        """Return epsilon used by policy (supports fixed epsilon in eval mode)."""
+        if self.fixed_epsilon is not None:
+            return float(self.fixed_epsilon)
+
+        return self.eps_end + (self.eps_start - self.eps_end) * np.exp(
+            -1.0 * self.steps_done / self.eps_decay_steps
+        )
+
+    def set_eval_mode(self, epsilon: float = 0.0) -> None:
+        """Disable online learning and use fixed epsilon for deterministic evaluation."""
+        self.training_enabled = False
+        self.fixed_epsilon = max(0.0, min(1.0, float(epsilon)))
+
+    def set_train_mode(self) -> None:
+        """Enable online learning and decay-based epsilon schedule."""
+        self.training_enabled = True
+        self.fixed_epsilon = None
 
     def _save(self) -> None:
         """Save weights and metadata."""
