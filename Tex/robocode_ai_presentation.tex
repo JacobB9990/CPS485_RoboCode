@@ -50,7 +50,7 @@
 
 % TITLE INFO
 \title[Robocode DQN]{AI in Robocode}
-\subtitle{DQN Bot Architecture and Training}
+\subtitle{DQN and PPO Bot Architecture and Training}
 \author[Becker \textit{et al.}]{
   Jacob Becker \and Adithya Hanakere Virupaksha \and Dan O'Keefe \and
   Corbin Wright \and Owen Bowers
@@ -83,8 +83,8 @@
   \begin{enumerate}
     \item Define the state space used by the bot
     \item Define the action space
-    \item Explain DQN as a value-based RL method
-    \item Show the objective function and training mechanics
+    \item Explain DQN and PPO training methods
+    \item Show the objective functions and update mechanics
     \item Show how performance will be measured (train vs eval)
   \end{enumerate}
 \end{frame}
@@ -231,6 +231,73 @@ self._execute_action(action)
 \end{frame}
 
 %----------------8-----------------
+\begin{frame}{PPO Bot Overview (Implemented)}
+\begin{itemize}
+  \item Uses same state and action dimensions as DQN: $16$ features, $7$ actions.
+  \item Network is actor-critic with shared trunk and two heads:
+  \begin{itemize}
+    \item policy head: action logits
+    \item value head: $V(s)$ baseline
+  \end{itemize}
+  \item Trains from on-policy trajectories collected during episodes.
+\end{itemize}
+
+\[
+\pi_\theta(a\mid s)=\operatorname{softmax}(\text{logits}_\theta(s)),\qquad
+V_\phi(s)=\text{value head}(s)
+\]
+\end{frame}
+
+%----------------9-----------------
+\begin{frame}{PPO Objective and Update Rule}
+\begin{itemize}
+  \item Advantages are computed from returns minus value estimates.
+  \item PPO clips policy ratio updates to limit destructive policy shifts.
+\end{itemize}
+
+\[
+A_t = R_t - V(s_t),\qquad
+r_t(\theta)=\frac{\pi_\theta(a_t\mid s_t)}{\pi_{\theta_{\text{old}}}(a_t\mid s_t)}
+\]
+
+\[
+\mathcal{L}^{\text{clip}}(\theta)=\mathbb{E}\left[\min\left(r_t(\theta)A_t,
+\operatorname{clip}(r_t(\theta),1-\epsilon,1+\epsilon)A_t\right)\right]
+\]
+
+\begin{itemize}
+  \item Value loss is optimized jointly with policy objective.
+  \item Current implementation runs multiple update epochs per episode batch.
+\end{itemize}
+\end{frame}
+
+%----------------10-----------------
+\begin{frame}{DQN vs PPO in This Project}
+\begin{columns}[T,totalwidth=\textwidth]
+\column{0.5\textwidth}
+\textbf{DQN (off-policy)}
+\begin{itemize}
+  \item Replay memory
+  \item Target network + soft update
+  \item Q-value regression (SmoothL1)
+  \item Epsilon-greedy exploration
+\end{itemize}
+
+\column{0.5\textwidth}
+\textbf{PPO (on-policy)}
+\begin{itemize}
+  \item Trajectory batches
+  \item Actor-critic objective
+  \item Clipped policy updates
+  \item Stochastic sampling from policy
+\end{itemize}
+\end{columns}
+
+\vspace{0.2cm}
+\small This gives two RL baselines with shared state/action design and different optimization behavior.
+\end{frame}
+
+%----------------11-----------------
 \begin{frame}{Overnight Results (Run: 2026-03-31)}
 \small
 \begin{block}{Overall}
@@ -267,7 +334,7 @@ Average reward: $-0.823$ \hfill Average steps: 122.9
 \end{columns}
 \end{frame}
 
-%----------------9-----------------
+%----------------12-----------------
 \begin{frame}{Interpretation and ML-Safe Next Changes}
 \begin{itemize}
   \item The policy generalizes strongly to Target, but struggles against movement-heavy opponents (SpinBot, Walls).
@@ -286,13 +353,13 @@ Average reward: $-0.823$ \hfill Average steps: 122.9
 \end{frame}
 
 
-%----------------10-----------------
+%----------------13-----------------
 \begin{frame}{Conclusion}
 \begin{itemize}
-  \item This version is a complete DQN-only bot pipeline.
-  \item State and action definitions are fixed and implemented.
-  \item Objective is value fitting with SmoothL1 + soft target updates.
-  \item Next step is targeted curriculum/reward tuning to improve SpinBot and Walls performance.
+  \item We now have both DQN and PPO bot pipelines in the same project.
+  \item State and action definitions are shared for fair algorithm comparison.
+  \item DQN uses replay + target updates; PPO uses clipped actor-critic updates.
+  \item Next step is benchmarked head-to-head evaluation on the same opponent set.
 \end{itemize}
 \end{frame}
 
