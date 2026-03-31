@@ -1,0 +1,11 @@
+Connection layer — the Java bot and Python server maintain a single persistent TCP socket for the entire battle. Death and victory no longer disconnect; they send a terminal state, the server resets its episode counters, and the next round picks up on the same connection. The static fields in Java ensure the socket survives Robocode's per-round class reinstantiation.
+
+State protocol — every time onScannedRobot fires, the bot sends a pipe-delimited STATE| message containing enemy name, distance, bearing, enemy energy, velocity, heading, your position, your energy, the accumulated reward, and a done flag. The server parses this into a clean Python dict every scan. Terminal states (STATE|terminal,...) are handled as a separate branch so normal logic never sees them.
+
+Reward shaping — the Java side accumulates reward signals from four events before flushing them with each state send: +3 for landing a bullet hit, -2 for taking a hit (also reverses movement direction), -1 for hitting a wall, and +5/-5 for winning/dying.
+
+Classifier — classifier.py runs a two-stage classification on the enemy every scan. Stage 1 fires once on the first scan and does a regex lookup against a name table of known Robocode bots, assigning a high-confidence category immediately if there's a match. Stage 2 is a behavioral accumulator that runs every scan using a rolling window of velocity, distance, bearing variance, and approach rate to score the enemy against four categories — RUSHER, SNIPER, CAMPER, and SITTER — falling back to UNKNOWN if nothing fits. The classifier resets cleanly between episodes via reset_episode().
+
+What's stubbed — the action selection is still random.randint(0, 3). The dispatch table that maps each category to its own DQN policy is the immediate next thing to build. The gun and radar logic in Java (linear targeting, radar lock) are still the original rule-based implementations and will stay that way — only movement and engagement distance will be RL-controlled.
+
+In short: the full data pipeline from game → server → classifier is working end to end. The project is at the point where dropping in real policies just means replacing one line in the server.
