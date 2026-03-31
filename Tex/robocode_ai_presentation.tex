@@ -50,8 +50,11 @@
 
 % TITLE INFO
 \title[Robocode DQN]{AI in Robocode}
-\subtitle{DQN Bot Architecture and Training (Jacob3\_0)}
-\author{Jacob Becker}
+\subtitle{DQN Bot Architecture and Training}
+\author[Becker \textit{et al.}]{
+  Jacob Becker \and Adithya Hanakere Virupaksha \and Dan O'Keefe \and
+  Corbin Wright \and Owen Bowers
+}
 \institute{Misericordia University}
 
 % DOCUMENT
@@ -62,11 +65,16 @@
   \setbeamertemplate{footline}{}
   \begin{frame}[plain]
     \centering
-    \vspace{0.30cm}
-    {\color{mublue}\Huge\textbf{\inserttitle}}\\[0.15cm]
-    {\color{black}\textbf{\insertsubtitle}}\\[0.25cm]
-    {\large\textbf{\insertauthor}}\\
-    \insertinstitute\\[0.35cm]
+    \vspace{0.8cm}
+    {\color{mublue}\Huge\textbf{AI in Robocode}}\\[0.3cm]
+    {\large DQN Bot Architecture and Training}\\[0.4cm]
+    {\color{mublue}\rule{0.75\textwidth}{0.8pt}}\\[0.4cm]
+    {\normalsize
+      Jacob Becker \quad$\cdot$\quad Adithya Hanakere Virupaksha\\[0.2cm]
+      Dan O'Keefe \quad$\cdot$\quad Corbin Wright \quad$\cdot$\quad Owen Bowers
+    }\\[0.4cm]
+    {\color{mublue}\rule{0.75\textwidth}{0.8pt}}\\[0.3cm]
+    {\small Misericordia University \quad$\cdot$\quad CPS485}
   \end{frame}
 }
 
@@ -77,27 +85,36 @@
     \item Define the action space
     \item Explain DQN as a value-based RL method
     \item Show the objective function and training mechanics
-    \item Show how performance will be measured
+    \item Show how performance will be measured (train vs eval)
   \end{enumerate}
 \end{frame}
 
 %----------------2-----------------
 \begin{frame}{Bot Architecture (Single Process)}
 \centering
+\definecolor{mublue}{RGB}{0, 102, 204}
+\definecolor{lightblue}{RGB}{230, 240, 255}
+
 \begin{tikzpicture}[
-  node distance=0.9cm and 0.9cm,
-  box/.style={draw=mublue, rounded corners, fill=lightblue, minimum height=1.0cm, align=center, font=\normalsize},
+  node distance=2cm and 1.2cm,   % vertical spacing = 2cm, horizontal = 1.2cm
+  box/.style={
+    draw=mublue, rounded corners, fill=lightblue,
+    minimum height=2.0cm, text width=2.8cm, align=center, font=\small
+  },
   arrow/.style={-{Stealth[length=3mm]}, thick, draw=mublue}
 ]
-\node[box, minimum width=3.4cm] (env) {Tank Royale\\Environment};
-\node[box, right=of env, minimum width=3.5cm] (bot) {DQNBot\\Event Loop};
-\node[box, right=of bot, minimum width=4.1cm] (agent) {DQNAgent\\Policy Net + Target Net};
-\node[box, below=of agent, minimum width=4.1cm] (replay) {ReplayMemory\\(state, action, next state, reward, done)};
-\draw[arrow] (env) -- node[above, font=\small] {scan/events} (bot);
-\draw[arrow] (bot) -- node[above, font=\small] {state} (agent);
-\draw[arrow] (agent) -- node[right, font=\small] {transition} (replay);
-\draw[arrow] (replay.west) -| node[pos=0.27, below, font=\small] {minibatch train} (agent.south);
-\draw[arrow] (bot.south) |- node[pos=0.2, left, font=\small] {7 actions} (env.south);
+\node[box] (env) {Tank Royale\\Environment};
+\node[box, right=of env] (bot) {DQNBot\\Event Loop};
+\node[box, right=of bot] (agent) {DQNAgent\\Policy Net + Target Net};
+\node[box, below=of agent] (replay) {ReplayMemory\\(state, action, next state, reward, done)};
+
+\draw[arrow] (env) -- node[above, font=\scriptsize] {scan/events} (bot);
+\draw[arrow] (bot) -- node[above, font=\scriptsize] {state} (agent);
+\draw[arrow] (agent) -- node[right, font=\scriptsize] {transition} (replay);
+% Place label on left side to avoid overlap with agent box
+\draw[arrow] (replay.north) -- node[left, font=\scriptsize] {minibatch train} (agent.south);
+% Clean arrow from bot to env: go down, then left, then up
+\draw[arrow] (bot.south) -- ++(0,-1.2) -| (env.south);
 \end{tikzpicture}
 \end{frame}
 
@@ -162,7 +179,8 @@ Terminal win/loss: $+1/-1$
 \]
 
 \begin{itemize}
-  \item Jacob3\_0 network: MLP $16 \rightarrow 128 \rightarrow 128 \rightarrow 7$.
+  \item Network: MLP $16 \rightarrow 128 \rightarrow 128 \rightarrow 7$.
+  \item New evaluation mode: online learning disabled and fixed $\epsilon$ (typically $0.0$).
 \end{itemize}
 \end{frame}
 
@@ -186,7 +204,7 @@ y_t = r_t + \gamma (1-d_t) \max_{a'} Q_{\bar\theta}(s_{t+1},a')
 \]
 
 \begin{itemize}
-  \item Jacob3\_0 uses Adam, gradient clipping, and $\tau=0.005$.
+  \item We use Adam, gradient clipping, and $\tau=0.005$.
 \end{itemize}
 \end{frame}
 
@@ -197,52 +215,86 @@ state = self._encode_state()
 action = self.agent.select_action(state)
 
 if self.prev_state is not None:
+  if not self.eval_mode:
     self.agent.push_transition(
-        self.prev_state,
-        self.prev_action,
-        state,
-        self.step_reward,
-        done=False,
+      self.prev_state,
+      self.prev_action,
+      state,
+      self.step_reward,
+      done=False,
     )
 
 self._execute_action(action)
 \end{lstlisting}
+\vspace{0.1cm}
+\small In eval mode, no replay writes and no optimizer updates are performed.
 \end{frame}
 
 %----------------8-----------------
-\begin{frame}{Performance Section (Fill In After Runs)}
-\begin{block}{Metrics to report}
-Win rate, average episode reward, steps survived, wall-hit count, reward variance.
+\begin{frame}{Overnight Results (Run: 2026-03-31)}
+\small
+\begin{block}{Overall}
+Episodes: 11,420 \hfill Wins: 6,264 \hfill Win rate: 54.9\%\\
+Average reward: $-0.823$ \hfill Average steps: 122.9
 \end{block}
 
-\vspace{0.2cm}
+\vspace{0.1cm}
+\begin{columns}[T,totalwidth=\textwidth]
+\column{0.5\textwidth}
+\textbf{Training summary}
 \begin{itemize}
-  \item Use the JSONL log file from training runs.
-  \item Plot win rate and reward versus episode index.
-  \item Compare different hyperparameter settings on same opponents.
+  \item Corners: 97.1\% win, reward $+1.333$
+  \item VelocityBot: 93.2\% win, reward $+0.264$
+  \item TrackFire: 60.3\% win, reward $-0.723$
+  \item RamFire: 55.5\% win, reward $-0.493$
+  \item Crazy: 35.2\% win, reward $-1.584$
+  \item SpinBot: 31.0\% win, reward $-1.942$
+  \item Walls: 9.5\% win, reward $-2.701$
 \end{itemize}
 
+\column{0.5\textwidth}
+\textbf{Evaluation summary}
+\begin{itemize}
+  \item Target: 100.0\% win, reward $+2.393$
+  \item SpinBot: 9.6\% win, reward $-3.425$
+  \item Walls: 9.4\% win, reward $-3.574$
+\end{itemize}
+
+\vspace{0.15cm}
 \[
-\text{WinRate}(N)=\frac{\#\text{wins in first }N\text{ episodes}}{N}
+\text{WinRate}=\frac{6264}{11420}=0.549
 \]
+\end{columns}
 \end{frame}
 
 %----------------9-----------------
+\begin{frame}{Interpretation and ML-Safe Next Changes}
+\begin{itemize}
+  \item The policy generalizes strongly to Target, but struggles against movement-heavy opponents (SpinBot, Walls).
+  \item Big train/eval drop on SpinBot suggests overfitting to current curriculum distribution.
+  \item Low Walls performance indicates poor wall-management behavior under pressure.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Possible changes}
+\begin{itemize}
+  \item Rebalance curriculum: increase sampling weight for Walls and SpinBot in training passes.
+  \item Reward shaping: add stronger penalty for wall collisions and getting pinned near boundaries.
+  \item Add action options for wall escape (turn-away + burst movement) while keeping RL policy control.
+  \item Tune exploration schedule and evaluate with fixed $\epsilon=0$ on held-out opponents only.
+\end{itemize}
+\end{frame}
+
+
+%----------------10-----------------
 \begin{frame}{Conclusion}
 \begin{itemize}
   \item This version is a complete DQN-only bot pipeline.
   \item State and action definitions are fixed and implemented.
   \item Objective is value fitting with SmoothL1 + soft target updates.
-  \item Next step is empirical tuning and filling the results slide.
+  \item Next step is targeted curriculum/reward tuning to improve SpinBot and Walls performance.
 \end{itemize}
 \end{frame}
 
-%----------------10----------------
-\begin{frame}{Q\&A}
-  \centering
-  \Huge{\color{mublue}Questions?}\\[1em]
-  \large Jacob Becker\\
-  \normalsize CPS485 Robocode AI Project
-\end{frame}
 
 \end{document}
