@@ -1,0 +1,14 @@
+{
+  "name": "AIBot",
+  "version": "1.0",
+  "authors": [
+    "Jacob"
+  ],
+  "description": "AI-powered bot with modular model support (heuristic baseline + DQN reinforcement learning).",
+  "homepage": "",
+  "countryCodes": [
+    "us"
+  ],
+  "platform": "Python",
+  "programmingLang": "Python 3"
+}

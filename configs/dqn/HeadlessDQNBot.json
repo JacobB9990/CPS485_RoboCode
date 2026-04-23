@@ -1,0 +1,8 @@
+{
+  "name": "DQNBot",
+  "version": "1.0.0",
+  "authors": ["Jacob"],
+  "description": "Headless wrapper for Jacob3_0 DQN bot",
+  "platform": "Python 3",
+  "programmingLang": "Python"
+}

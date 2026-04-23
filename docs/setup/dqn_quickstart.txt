@@ -1,0 +1,51 @@
+╔════════════════════════════════════════════════════════════════╗
+║        DQN Bot for RoboCode Tank Royale - Quick Start          ║
+╚════════════════════════════════════════════════════════════════╝
+
+1. INSTALL DEPENDENCIES
+   pip install torch numpy robocode-tank-royale
+
+2. RUN THE BOT
+   
+   Option A (Recommended):
+   python3 -m bots.python.dqn.runtime.run_bot
+   
+   Option B:
+   bash run.sh
+   
+   Option C (with custom settings):
+   python3 -m bots.python.dqn.runtime.run_bot --batch-size 64 --learning-rate 1e-4
+
+3. MONITOR TRAINING
+   Watch the console output for episode progress
+   
+   Example output:
+   [DQNBot] Episode 1 | eps_end=0.900 | buffer=0
+   [DQNBot] Episode 1 finished | won=True | reward=2.15 | win_rate=1.000
+
+4. OUTPUTS
+   • data/checkpoints/dqn/dqn_weights.pt → Saved model (auto-loads on restart)
+   • logs/dqn/dqn_training_log.jsonl → Episode metrics
+
+5. CUSTOMIZE (all optional)
+   --learning-rate RATE       Default: 1e-4
+   --gamma DISCOUNT           Default: 0.99
+   --eps-start VALUES         Default: 0.9
+   --eps-end values           Default: 0.05
+   --eps-decay-steps STEPS    Default: 2500
+   --tau SOFT_UPDATE          Default: 0.005
+   --batch-size SIZE          Default: 128
+   --memory-capacity SIZE     Default: 10000
+   --weights-path PATH        Default: data/checkpoints/dqn/dqn_weights.pt
+   --log-path PATH            Default: logs/dqn/dqn_training_log.jsonl
+
+TROUBLESHOOTING:
+   See SETUP.md for detailed troubleshooting guide
+   See README.md for architecture documentation
+
+For more info, visit:
+https://docs.pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
+
+---
+Monte Carlo - unbiased q value
+FUnction Approx - q value, onestep

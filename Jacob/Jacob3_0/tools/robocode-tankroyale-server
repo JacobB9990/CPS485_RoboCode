@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-set -euo pipefail
-java --enable-native-access=ALL-UNNAMED -jar "/Users/jacobbecker/CPS485_RoboCode/Jacob/Jacob3_0/tools/robocode-tankroyale-server-0.38.2.jar" "$@"

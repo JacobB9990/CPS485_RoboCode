@@ -2,105 +2,50 @@
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-*.egg
-*.egg-info/
-dist/
-build/
-eggs/
-parts/
-var/
-*.log
-*.sqlite3
-*.db
-*.env
-*.venv/
-.env/
+.venv/
 venv/
 ENV/
-env.bak/
-*.bak
-*.swp
-
-
-# Virtualenv / Conda
-.venv/
-env/
-env/
-.conda/
-.condarc
-.conda_env.yml
-*.conda
-
-
-# IDEs
-.vscode/
-.idea/
-*.iml
-*.sublime-project
-*.sublime-workspace
-
-
-# Jupyter / Notebooks
-.ipynb_checkpoints/
-*.ipynb
-*.nbconvert.ipynb
-*.jupyter/
-
-
-# ML / AI
-*.h5
-*.hdf5
-*.pt
-*.pth
-*.ckpt
-*.weights
-*.log
-tensorboard/
-runs/
-checkpoints/
-output/
-predictions/
-models/
-data/raw/
-data/processed/
-*.npy
-*.npz
-
-
-# Robotics / ROS
-devel/
+.env
+.env.*
+dist/
 build/
-log/
-*.bag
-*.launch
-*.urdf
-*.sdf
-*.xacro
-*.rosinstall
-*.swp
+*.egg-info/
 
+# Java / Robocode
+*.class
+*.jar
+*.war
+.gradle/
+out/
+bots/java/**/bin/
+scripts/run/.build/
 
-# System
+# IDE / OS
 .DS_Store
 Thumbs.db
-*.orig
-*.tmp
-*.bak
+.idea/
+.vscode/
+*.iml
 *.swp
+*.tmp
+*.orig
 
+# Runtime-generated artifacts
+logs/**/*
+data/checkpoints/**/*
+data/q_tables/**/*.json
+data/exports/**/*
 
-# RL training data (generated at runtime)
-Jacob/experiences/*.jsonl
-Jacob/models/*.pt
-Old/
-Jacob/SARSA/*.jsonl
-Jacob/SARSA/*.json
-/Jacob/Jacob3_0/test.md
-/Jacob/Jacob3_0/SETUP.md
-/Jacob/SARSA/steps.md
-/Jacob/SARSA/Notes.md
-/Jacob/Jacob3_0/README.md
-/Jacob/Jacob2_0/notes.md
-/Jacob/Jacob3_0/QUICKSTART.txt
-notes.md
+# Keep directory structure
+!logs/.gitkeep
+!logs/dqn/.gitkeep
+!logs/ppo/.gitkeep
+!logs/sarsa/.gitkeep
+!logs/eval/.gitkeep
+!data/checkpoints/.gitkeep
+!data/checkpoints/dqn/.gitkeep
+!data/checkpoints/ppo/.gitkeep
+!data/checkpoints/sarsa/.gitkeep
+!data/q_tables/.gitkeep
+!data/q_tables/sarsa/.gitkeep
+!data/exports/.gitkeep

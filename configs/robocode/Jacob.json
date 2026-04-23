@@ -1,0 +1,14 @@
+{
+  "name": "Jacob SARSA Bot",
+  "version": "1.0",
+  "authors": [
+    "Jacob Becker"
+  ],
+  "description": "Minimal tabular SARSA reinforcement learning bot.",
+  "homepage": "",
+  "countryCodes": [
+    "us"
+  ],
+  "platform": "Python",
+  "programmingLang": "Python 3"
+}

@@ -1,0 +1,148 @@
+package cw;
+
+import robocode.*;
+import robocode.util.Utils;
+import java.io.*;
+import java.net.*;
+import java.util.Random;
+
+public class SocketBaselineBot extends AdvancedRobot {
+
+    // Static so they persist across rounds
+    private static Socket socket;
+    private static PrintWriter out;
+    private static BufferedReader in;
+    private static boolean serverConnected = false;
+
+    double reward = 0;
+    boolean done = false;
+    int moveDirection = 1;
+    Random rng = new Random();
+
+    private void connectToServer() {
+        // Only connect if not already connected
+        if (serverConnected) return;
+        try {
+            socket = new Socket("localhost", 5000);
+            out = new PrintWriter(socket.getOutputStream(), true);
+            in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            serverConnected = true;
+            System.out.println("Connected to AI server");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    // DO NOT close socket on round end — let it persist
+    // onRoundEnded removed intentionally
+
+    public void run() {
+        connectToServer(); // No-op if already connected
+
+        // Reset per-round state
+        reward = 0;
+        done = false;
+
+        setAdjustRadarForGunTurn(true);
+        setAdjustGunForRobotTurn(true);
+        setMaxVelocity(8);
+
+        while (true) {
+            setTurnRadarRight(360);
+            execute();
+        }
+    }
+
+    public void onScannedRobot(ScannedRobotEvent e) {
+        if (!serverConnected) return;
+
+        double absBearing = getHeadingRadians() + e.getBearingRadians();
+
+        // Send state
+        String state = "STATE|" +
+            e.getName() + "," +
+            e.getDistance() + "," +
+            e.getBearingRadians() + "," +
+            e.getEnergy() + "," +
+            e.getVelocity() + "," +
+            e.getHeadingRadians() + "," +
+            getX() + "," + getY() + "," +
+            getEnergy() + "," +
+            reward + "," +
+            (done ? 1 : 0);
+
+        out.println(state);
+        reward = 0;
+
+        // Receive action
+        try {
+            String response = in.readLine();
+            if (response != null && response.startsWith("ACTION|")) {
+                int action = Integer.parseInt(response.split("\\|")[1]);
+                switch (action) {
+                    case 0: setAhead(150); break;
+                    case 1: setBack(150); break;
+                    case 2: setTurnRight(30); break;
+                    case 3: setTurnLeft(30); break;
+                }
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
+        // Radar lock
+        double radarTurn = Utils.normalRelativeAngle(absBearing - getRadarHeadingRadians());
+        setTurnRadarRightRadians(2 * radarTurn);
+
+        // Linear targeting
+        double bulletPower = Math.min(3.0, Math.max(1.0, 400 / e.getDistance()));
+        double bulletSpeed = 20 - 3 * bulletPower;
+        double enemyHeading = e.getHeadingRadians();
+        double enemyVelocity = e.getVelocity();
+        double lead = Math.asin(enemyVelocity / bulletSpeed * Math.sin(enemyHeading - absBearing));
+        double gunTurn = absBearing + lead - getGunHeadingRadians();
+        setTurnGunRightRadians(Utils.normalRelativeAngle(gunTurn));
+        if (getGunHeat() == 0) setFire(bulletPower);
+    }
+
+    public void onBulletHit(BulletHitEvent e) { reward += 3; }
+    public void onHitByBullet(HitByBulletEvent e) { moveDirection *= -1; reward -= 2; }
+    public void onHitWall(HitWallEvent e) { reward -= 1; }
+
+    public void onDeath(DeathEvent e) {
+        reward -= 5;
+        done = true;
+        System.out.println("I DIED - sending terminal state");
+        sendTerminalState();
+    }
+
+    public void onWin(WinEvent e) {
+        reward += 5;
+        done = true;
+        System.out.println("I WON - sending terminal state");
+        sendTerminalState();
+    }
+
+    private void sendTerminalState() {
+        if (!serverConnected) return;
+        try {
+            String state = "STATE|terminal,0,0,0,0,0,0,0,0," + reward + ",1";
+            out.println(state);
+            // Wait for the action response to keep protocol in sync
+            in.readLine();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    private double wallSmoothing(double x, double y, double angle) {
+        double margin = 60;
+        double futureX = x + Math.sin(angle) * 100;
+        double futureY = y + Math.cos(angle) * 100;
+        if (futureX < margin || futureX > getBattleFieldWidth() - margin ||
+            futureY < margin || futureY > getBattleFieldHeight() - margin) {
+            angle += moveDirection * 0.5;
+        }
+        return angle;
+    }
+}
