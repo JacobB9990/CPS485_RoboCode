@@ -48,4 +48,3 @@ data/exports/**/*
 !data/checkpoints/sarsa/.gitkeep
 !data/q_tables/.gitkeep
 !data/q_tables/sarsa/.gitkeep
-!data/exports/.gitkeep

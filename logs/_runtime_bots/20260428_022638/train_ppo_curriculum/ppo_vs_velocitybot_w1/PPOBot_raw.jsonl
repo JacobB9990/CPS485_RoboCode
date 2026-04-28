@@ -1,0 +1,1 @@
+{"episode": 2, "won": false, "placement": 2, "total_bots": 2, "steps": 9, "total_reward": -0.1214, "policy_loss": -0.019233, "value_loss": 0.098413, "entropy": 5.524015, "damage_dealt": 0.0, "damage_taken": 0.0, "kills": 0, "fire_actions": 0, "wall_hits": 1, "mode": "train", "opponent": "VelocityBot", "scenario": "ppo_vs_velocitybot"}

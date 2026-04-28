@@ -61,6 +61,23 @@ BOT_SPECS = {
         "log_flag": "--log-path",
         "supports_eval": True,
     },
+    "PPOBotAdvanced": {
+        "name": "PPOBotAdvanced",
+        "version": "1.0",
+        "module": "PPOBotAdvanced.runtime.PPO_Bot",
+        "weights": ROOT / "PPOBotAdvanced" / "checkpoints" / "ppo_weights.pt",
+        "log_flag": "--log-path",
+        "supports_eval": True,
+    },
+    "PPOBotAdvancedReader": {
+        "name": "PPOBotAdvanced",
+        "version": "1.0",
+        "module": "PPOBotAdvanced.runtime.PPO_Bot",
+        "weights": ROOT / "PPOBotAdvanced" / "checkpoints" / "ppo_weights.pt",
+        "log_flag": "--log-path",
+        "supports_eval": False,
+        "extra_args": ["--read-only-weights"],
+    },
     "SarsaBot": {
         "name": "SarsaBot",
         "version": "1.0",

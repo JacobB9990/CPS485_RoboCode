@@ -1,0 +1,27 @@
+{
+  "gameType": "classic",
+  "arenaWidth": 800,
+  "arenaHeight": 600,
+  "numberOfRounds": 150,
+  "gunCoolingRate": 0.1,
+  "maxInactivityTurns": 600,
+  "turnTimeout": 30000,
+  "bots": [
+    {
+      "name": "PPOBot",
+      "version": "generated"
+    },
+    {
+      "name": "Crazy",
+      "version": "generated"
+    },
+    {
+      "name": "TrackFire",
+      "version": "generated"
+    },
+    {
+      "name": "RamFire",
+      "version": "generated"
+    }
+  ]
+}

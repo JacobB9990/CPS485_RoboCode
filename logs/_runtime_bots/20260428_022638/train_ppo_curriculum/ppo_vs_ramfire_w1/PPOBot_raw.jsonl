@@ -1,0 +1,1 @@
+{"episode": 2, "won": false, "placement": 2, "total_bots": 2, "steps": 3, "total_reward": -0.0069, "policy_loss": -0.060766, "value_loss": 0.065025, "entropy": 5.318724, "damage_dealt": 0.0, "damage_taken": 0.0, "kills": 0, "fire_actions": 0, "wall_hits": 0, "mode": "train", "opponent": "RamFire", "scenario": "ppo_vs_ramfire"}

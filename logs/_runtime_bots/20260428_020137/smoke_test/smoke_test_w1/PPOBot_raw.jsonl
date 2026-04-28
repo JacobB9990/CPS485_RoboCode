@@ -1,0 +1,1 @@
+{"episode": 2, "won": false, "placement": 2, "total_bots": 2, "steps": 7, "total_reward": -0.5524, "policy_loss": -0.030186, "value_loss": 0.039753, "entropy": 6.038662, "damage_dealt": 0.0, "damage_taken": 0.0, "kills": 0, "fire_actions": 1, "wall_hits": 4, "mode": "train", "opponent": "Target", "scenario": "smoke_test"}

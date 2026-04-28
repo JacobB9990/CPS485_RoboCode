@@ -1,0 +1,19 @@
+{
+  "gameType": "classic",
+  "arenaWidth": 800,
+  "arenaHeight": 600,
+  "numberOfRounds": 75,
+  "gunCoolingRate": 0.1,
+  "maxInactivityTurns": 450,
+  "turnTimeout": 30000,
+  "bots": [
+    {
+      "name": "PPOBotReader",
+      "version": "generated"
+    },
+    {
+      "name": "Target",
+      "version": "generated"
+    }
+  ]
+}
