@@ -1,0 +1,10 @@
+{
+  "name": "MeleeOpponentModelBot",
+  "version": "1.0.0",
+  "authors": ["Jacob"],
+  "description": "Python melee opponent-model bot",
+  "homepage": null,
+  "countryCodes": ["US"],
+  "platform": "Python 3.12",
+  "programmingLang": "Python"
+}

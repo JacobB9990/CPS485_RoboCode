@@ -21,14 +21,15 @@ Jacob/Jacob3_0/
 │   ├── evaluation.py
 │   ├── orchestrator.py
 │   └── pool.py
-├── checkpoints/
+├── bots/python/dqn/checkpoints/
 │   └── checkpoint_index.jsonl
-├── logs/
-│   └── melee/
-│       ├── train_history.jsonl
+├── bots/python/dqn/logs/
+│   └── eval/
 │       ├── eval_history.jsonl
-│       ├── evaluation_summary.jsonl
-│       └── telemetry/
+│       └── melee/
+│           ├── train_history.jsonl
+│           ├── evaluation_summary.jsonl
+│           └── telemetry/
 └── run_melee_training.py
 ```
 
@@ -37,14 +38,14 @@ Jacob/Jacob3_0/
 `run_melee_training.py` supports four modes:
 
 - `plan-train`: build a randomized curriculum schedule without executing battles.
-- `run-train`: execute the full curriculum and write JSONL battle logs.
+- `run-train`: execute the full curriculum and write JSONL battle logs under `bots/python/dqn/logs/`.
 - `plan-eval`: show the fixed evaluation suite.
 - `run-eval`: execute the evaluation suite and compute checkpoint metrics.
 
 The scheduler always includes the current bot and samples 2 to 10 opponents from:
 
 - fixed benchmark bots
-- older checkpoint bots from `checkpoint_index.jsonl`
+- older checkpoint bots from `bots/python/dqn/checkpoints/checkpoint_index.jsonl`
 - random baseline bots
 
 The curriculum intentionally widens over time:
@@ -58,7 +59,7 @@ The curriculum intentionally widens over time:
 The self-play pool is split into three buckets:
 
 - `current_bot_dir`: the actively trained bot
-- checkpoint pool: older snapshots registered in `checkpoints/checkpoint_index.jsonl`
+- checkpoint pool: older snapshots registered in `bots/python/dqn/checkpoints/checkpoint_index.jsonl`
 - baseline pool: simple scripted bots that keep the population from collapsing into mirror play
 
 Each checkpoint row is expected to look like:
@@ -92,7 +93,7 @@ Optional bot telemetry can add true melee metrics:
 - `damage`
 - `kills`
 
-To enable that, have your Java bot write JSONL rows to `logs/melee/telemetry/` with fields like:
+To enable that, have your Java bot write JSONL rows to `bots/python/dqn/logs/eval/melee/telemetry/` with fields like:
 
 ```json
 {"battle_id":"eval_8way_chaos","survival_time":412,"damage":86.5,"kills":2}
@@ -107,7 +108,7 @@ Use training in short slices, then evaluate before promoting a checkpoint:
 
 1. Run one curriculum pass.
 2. Save a checkpoint and materialize a bot directory for it.
-3. Register that checkpoint in `checkpoint_index.jsonl`.
+3. Register that checkpoint in `bots/python/dqn/checkpoints/checkpoint_index.jsonl`.
 4. Run the fixed evaluation suite.
 5. Keep the best checkpoints by lowest `average_placement`.
 

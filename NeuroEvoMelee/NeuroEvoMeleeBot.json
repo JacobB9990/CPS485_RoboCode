@@ -1,0 +1,11 @@
+{
+  "name": "NeuroEvoMeleeBot",
+  "version": "0.1.0",
+  "authors": ["Jacob"],
+  "description": "Neuroevolution melee bot with fixed-size multi-enemy state encoding",
+  "homepage": null,
+  "countryCodes": ["US"],
+  "gameTypes": ["classic", "melee"],
+  "platform": "Java 17",
+  "programmingLang": "Java"
+}

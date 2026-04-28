@@ -12,7 +12,7 @@ robocode-tankroyale-server --port=7654 --games=classic
 
 DQN BOT (TERMINAL 2):
 cd /Users/jacobbecker/CPS485_RoboCode
-python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path data/checkpoints/dqn/dqn_weights_curriculum.pt --log-path logs/eval/eval_walls_headless.jsonl
+python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path bots/python/dqn/checkpoints/dqn_weights_curriculum.pt --log-path bots/python/dqn/logs/eval/eval_walls_headless.jsonl
 
 OPPONENT BOT (TERMINAL 3):
 cd /Users/jacobbecker/CPS485_RoboCode/SampleBots/Walls

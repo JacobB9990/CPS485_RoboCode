@@ -64,8 +64,8 @@ Suggested first block:
 
 Your bot writes:
 
-1. `data/q_tables/sarsa/q_table_sarsa.json`: learned Q-values
-2. `logs/sarsa/training_log.jsonl`: one JSON line per episode
+1. `bots/python/sarsa/data/q_table_sarsa.json`: learned Q-values
+2. `bots/python/sarsa/logs/training_log.jsonl`: one JSON line per episode
 
 Back up these files before major experiments.
 

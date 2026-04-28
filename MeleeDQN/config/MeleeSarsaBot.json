@@ -1,0 +1,10 @@
+{
+  "name": "MeleeSarsaBot",
+  "version": "1.0.0",
+  "authors": ["Jacob"],
+  "description": "Python melee SARSA bot",
+  "homepage": null,
+  "countryCodes": ["US"],
+  "platform": "Python 3.12",
+  "programmingLang": "Python"
+}

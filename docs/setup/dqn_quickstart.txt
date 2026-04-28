@@ -24,8 +24,8 @@
    [DQNBot] Episode 1 finished | won=True | reward=2.15 | win_rate=1.000
 
 4. OUTPUTS
-   • data/checkpoints/dqn/dqn_weights.pt → Saved model (auto-loads on restart)
-   • logs/dqn/dqn_training_log.jsonl → Episode metrics
+   • bots/python/dqn/checkpoints/dqn_weights.pt → Saved model (auto-loads on restart)
+   • bots/python/dqn/logs/dqn_training_log.jsonl → Episode metrics
 
 5. CUSTOMIZE (all optional)
    --learning-rate RATE       Default: 1e-4
@@ -36,8 +36,8 @@
    --tau SOFT_UPDATE          Default: 0.005
    --batch-size SIZE          Default: 128
    --memory-capacity SIZE     Default: 10000
-   --weights-path PATH        Default: data/checkpoints/dqn/dqn_weights.pt
-   --log-path PATH            Default: logs/dqn/dqn_training_log.jsonl
+   --weights-path PATH        Default: bots/python/dqn/checkpoints/dqn_weights.pt
+   --log-path PATH            Default: bots/python/dqn/logs/dqn_training_log.jsonl
 
 TROUBLESHOOTING:
    See SETUP.md for detailed troubleshooting guide

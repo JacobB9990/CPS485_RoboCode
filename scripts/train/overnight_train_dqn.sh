@@ -16,7 +16,7 @@
 #   TRAIN_LIMIT=0            Limit number of training opponents (0 = all)
 #   EVAL_LIMIT=0             Limit number of eval opponents (0 = all)
 #   PORT=0                   Server port (0 = dynamic auto-port, default: 0)
-#   WEIGHTS_NAME=my.pt       Weights file name in data/checkpoints/dqn (default: dqn_weights_curriculum.pt)
+#   WEIGHTS_NAME=my.pt       Weights file name in bots/python/dqn/checkpoints (default: dqn_weights_curriculum.pt)
 
 set -euo pipefail
 
@@ -24,7 +24,7 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 RUN_BATTLE_CMD="$ROOT_DIR/scripts/run/run_battle.sh"
 DQN_BOT_DIR="$ROOT_DIR/bots/python/dqn/runtime"
-LOG_ROOT="$ROOT_DIR/logs/dqn/overnight_$(date +%Y%m%d_%H%M%S)"
+LOG_ROOT="$ROOT_DIR/bots/python/dqn/logs/overnight_$(date +%Y%m%d_%H%M%S)"
 PASSES="${PASSES:-2}"
 TRAIN_ROUNDS="${TRAIN_ROUNDS:-60}"
 EVAL_ROUNDS="${EVAL_ROUNDS:-100}"
@@ -32,7 +32,7 @@ TRAIN_LIMIT="${TRAIN_LIMIT:-0}"
 EVAL_LIMIT="${EVAL_LIMIT:-0}"
 PORT="${PORT:-0}"
 WEIGHTS_NAME="${WEIGHTS_NAME:-dqn_weights_curriculum.pt}"
-WEIGHTS_PATH="$ROOT_DIR/data/checkpoints/dqn/$WEIGHTS_NAME"
+WEIGHTS_PATH="$ROOT_DIR/bots/python/dqn/checkpoints/$WEIGHTS_NAME"
 
 mkdir -p "$LOG_ROOT"
 

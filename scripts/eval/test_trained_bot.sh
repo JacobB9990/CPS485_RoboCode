@@ -45,8 +45,8 @@ fi
 
 OPPONENT_DIR="${OPPONENTS[$OPPONENT_NAME]}"
 DQN_BOT_DIR="$ROOT_DIR/bots/python/dqn/runtime"
-WEIGHTS_PATH="$ROOT_DIR/data/checkpoints/dqn/$WEIGHTS_FILE"
-LOG_DIR="$ROOT_DIR/logs/eval/test_$(date +%Y%m%d_%H%M%S)"
+WEIGHTS_PATH="$ROOT_DIR/bots/python/dqn/checkpoints/$WEIGHTS_FILE"
+LOG_DIR="$ROOT_DIR/bots/python/dqn/logs/eval/test_$(date +%Y%m%d_%H%M%S)"
 TEST_JSONL="$LOG_DIR/dqn_eval_${OPPONENT_NAME}.jsonl"
 
 mkdir -p "$LOG_DIR"
@@ -54,7 +54,7 @@ mkdir -p "$LOG_DIR"
 if [ ! -f "$WEIGHTS_PATH" ]; then
   echo "ERROR: Weights file not found: $WEIGHTS_PATH"
   echo "Available weights:"
-  ls -lh "$ROOT_DIR/data/checkpoints/dqn"/*.pt 2>/dev/null | awk '{print "  " $NF}' || echo "  (none)"
+  ls -lh "$ROOT_DIR/bots/python/dqn/checkpoints"/*.pt 2>/dev/null | awk '{print "  " $NF}' || echo "  (none)"
   exit 1
 fi
 

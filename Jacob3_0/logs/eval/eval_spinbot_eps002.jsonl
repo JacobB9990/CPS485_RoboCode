@@ -1,0 +1,6 @@
+{"episode": 15, "won": true, "epsilon": 0.02, "total_reward": 0.7099999999999997, "wall_hits": 2, "fire_actions": 233, "avg_abs_td_error": 0.03209043548171661, "turns": 235}
+{"episode": 32, "won": true, "epsilon": 0.02, "total_reward": -3.2299999999999933, "wall_hits": 92, "fire_actions": 160, "avg_abs_td_error": 0.042663688289877405, "turns": 253}
+{"episode": 65, "won": true, "epsilon": 0.02, "total_reward": 0.05999999999999939, "wall_hits": 5, "fire_actions": 302, "avg_abs_td_error": 0.020130695011267435, "turns": 325}
+{"episode": 91, "won": true, "epsilon": 0.02, "total_reward": -5.6799999999999855, "wall_hits": 125, "fire_actions": 129, "avg_abs_td_error": 0.04095746530343493, "turns": 293}
+{"episode": 98, "won": true, "epsilon": 0.02, "total_reward": -7.279999999999998, "wall_hits": 154, "fire_actions": 123, "avg_abs_td_error": 0.04596809621407686, "turns": 295}
+{"episode": 65, "won": true, "epsilon": 0.02, "total_reward": -1.6199999999999992, "wall_hits": 38, "fire_actions": 148, "avg_abs_td_error": 0.035541843837837345, "turns": 207}

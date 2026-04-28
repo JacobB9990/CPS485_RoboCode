@@ -1,0 +1,10 @@
+{
+  "name": "HeadlessMeleeDQNBot",
+  "version": "1.0.0",
+  "authors": ["Jacob"],
+  "description": "Headless Python melee DQN bot",
+  "homepage": null,
+  "countryCodes": ["US"],
+  "platform": "Python 3.12",
+  "programmingLang": "Python"
+}

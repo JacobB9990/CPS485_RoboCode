@@ -1,0 +1,10 @@
+{
+  "name": "MeleeDQNBot",
+  "version": "1.0.0",
+  "authors": ["Jacob"],
+  "description": "Python melee DQN bot with socket-backed training and melee state encoding",
+  "homepage": null,
+  "countryCodes": ["US"],
+  "platform": "Python 3.12",
+  "programmingLang": "Python"
+}

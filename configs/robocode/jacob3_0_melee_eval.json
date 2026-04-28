@@ -1,0 +1,31 @@
+{
+  "gameType": "classic",
+  "arenaWidth": 800,
+  "arenaHeight": 600,
+  "numberOfRounds": 50,
+  "gunCoolingRate": 0.1,
+  "maxInactivityTurns": 600,
+  "turnTimeout": 30000,
+  "bots": [
+    {
+      "name": "Jacob3_0",
+      "version": "generated"
+    },
+    {
+      "name": "MeleeDQN",
+      "version": "generated"
+    },
+    {
+      "name": "PPOBot",
+      "version": "generated"
+    },
+    {
+      "name": "SarsaBot",
+      "version": "generated"
+    },
+    {
+      "name": "NeuroEvoMelee",
+      "version": "generated"
+    }
+  ]
+}

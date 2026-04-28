@@ -11,13 +11,15 @@ pip install torch numpy robocode-tank-royale
 
 ```
 Jacob3_0/
-├── DQNBot.json              # Bot metadata (required by RoboCode)
-├── dqn_agent.py            # DQN agent implementation
-├── dqn_bot.py              # RoboCode tank bot using DQN
-├── bots/python/dqn/runtime/run_bot.py
-├── run.sh                   # Shell launcher with env setup
-├── README.md               # Architecture & conceptual docs
-└── SETUP.md                # This file
+├── bots/python/dqn/
+│   ├── config/DQNBot.json   # Bot metadata
+│   ├── agent/dqn_agent.py   # DQN agent implementation
+│   ├── runtime/dqn_bot.py   # RoboCode tank bot using DQN
+│   ├── runtime/run_bot.py   # Python launcher
+│   ├── checkpoints/
+│   └── logs/
+├── scripts/run/
+└── docs/setup/dqn_setup.md
 ```
 
 ## Running the Bot
@@ -66,7 +68,7 @@ Use eval mode for fair bot-vs-bot benchmarking. It disables replay storage, grad
 
 ## Output Files
 
-### data/checkpoints/dqn/dqn_weights.pt
+### bots/python/dqn/checkpoints/dqn_weights.pt
 PyTorch checkpoint containing:
 - Policy network state_dict
 - Target network state_dict
@@ -75,7 +77,7 @@ PyTorch checkpoint containing:
 
 Automatically loaded on startup if it exists.
 
-### logs/dqn/dqn_training_log.jsonl
+### bots/python/dqn/logs/dqn_training_log.jsonl
 JSON Lines format log, one line per episode:
 ```json
 {"episode": 1, "won": true, "total_reward": 2.15, "steps": 152, "mode": "train", "epsilon": 0.0831, "buffer_size": 1024, "win_rate": 1.0, "training_steps": 8374}
@@ -87,7 +89,7 @@ JSON Lines format log, one line per episode:
 Use the provided launchers (`python3 -m bots.python.dqn.runtime.run_bot` or `scripts/run/run_dqn_bot.sh`) which set environment variables automatically.
 
 ### "Failed to read bot info json file: DQNBot.json"
-Make sure `DQNBot.json` exists in the same directory as `dqn_bot.py`.
+Make sure RoboCode is pointed at `bots/python/dqn/config/DQNBot.json` for this bot.
 
 ### Out of Memory
 Reduce `--batch-size` or `--memory-capacity`:
@@ -112,8 +114,8 @@ The code automatically falls back to CPU. To force CPU:
 
 Example: Collect training runs separately:
 ```bash
-python3 -m bots.python.dqn.runtime.run_bot --log-path logs/dqn/run_1.jsonl --weights-path data/checkpoints/dqn/run_1.pt
-python3 -m bots.python.dqn.runtime.run_bot --log-path logs/dqn/run_2.jsonl --weights-path data/checkpoints/dqn/run_2.pt
+python3 -m bots.python.dqn.runtime.run_bot --log-path bots/python/dqn/logs/run_1.jsonl --weights-path bots/python/dqn/checkpoints/run_1.pt
+python3 -m bots.python.dqn.runtime.run_bot --log-path bots/python/dqn/logs/run_2.jsonl --weights-path bots/python/dqn/checkpoints/run_2.pt
 ```
 
 ## Architecture Overview

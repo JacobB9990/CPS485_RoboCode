@@ -8,8 +8,8 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
-WEIGHTS="$ROOT/data/checkpoints/dqn/dqn_weights_curriculum.pt"
-LOGS_DIR="$ROOT/logs/eval"
+WEIGHTS="$ROOT/bots/python/dqn/checkpoints/dqn_weights_curriculum.pt"
+LOGS_DIR="$ROOT/bots/python/dqn/logs/eval"
 
 mkdir -p "$LOGS_DIR"
 
@@ -21,25 +21,25 @@ DQN BOT COMMANDS (TERMINAL A)
 ============================================================
 
 TRAINING (online learning enabled)
-python3 -m bots.python.dqn.runtime.run_bot --weights-path data/checkpoints/dqn/dqn_weights_curriculum.pt --log-path logs/dqn/train_walls.jsonl
-python3 -m bots.python.dqn.runtime.run_bot --weights-path data/checkpoints/dqn/dqn_weights_curriculum.pt --log-path logs/dqn/train_spinbot.jsonl
-python3 -m bots.python.dqn.runtime.run_bot --weights-path data/checkpoints/dqn/dqn_weights_curriculum.pt --log-path logs/dqn/train_ramfire.jsonl
-python3 -m bots.python.dqn.runtime.run_bot --weights-path data/checkpoints/dqn/dqn_weights_curriculum.pt --log-path logs/dqn/train_trackfire.jsonl
-python3 -m bots.python.dqn.runtime.run_bot --weights-path data/checkpoints/dqn/dqn_weights_curriculum.pt --log-path logs/dqn/train_velocitybot.jsonl
-python3 -m bots.python.dqn.runtime.run_bot --weights-path data/checkpoints/dqn/dqn_weights_curriculum.pt --log-path logs/dqn/train_crazy.jsonl
-python3 -m bots.python.dqn.runtime.run_bot --weights-path data/checkpoints/dqn/dqn_weights_curriculum.pt --log-path logs/dqn/train_corners.jsonl
+python3 -m bots.python.dqn.runtime.run_bot --weights-path bots/python/dqn/checkpoints/dqn_weights_curriculum.pt --log-path bots/python/dqn/logs/train_walls.jsonl
+python3 -m bots.python.dqn.runtime.run_bot --weights-path bots/python/dqn/checkpoints/dqn_weights_curriculum.pt --log-path bots/python/dqn/logs/train_spinbot.jsonl
+python3 -m bots.python.dqn.runtime.run_bot --weights-path bots/python/dqn/checkpoints/dqn_weights_curriculum.pt --log-path bots/python/dqn/logs/train_ramfire.jsonl
+python3 -m bots.python.dqn.runtime.run_bot --weights-path bots/python/dqn/checkpoints/dqn_weights_curriculum.pt --log-path bots/python/dqn/logs/train_trackfire.jsonl
+python3 -m bots.python.dqn.runtime.run_bot --weights-path bots/python/dqn/checkpoints/dqn_weights_curriculum.pt --log-path bots/python/dqn/logs/train_velocitybot.jsonl
+python3 -m bots.python.dqn.runtime.run_bot --weights-path bots/python/dqn/checkpoints/dqn_weights_curriculum.pt --log-path bots/python/dqn/logs/train_crazy.jsonl
+python3 -m bots.python.dqn.runtime.run_bot --weights-path bots/python/dqn/checkpoints/dqn_weights_curriculum.pt --log-path bots/python/dqn/logs/train_corners.jsonl
 
 EVALUATION (no online learning, fixed epsilon)
-python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path data/checkpoints/dqn/dqn_weights_curriculum.pt --log-path logs/eval/eval_walls.jsonl
-python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path data/checkpoints/dqn/dqn_weights_curriculum.pt --log-path logs/eval/eval_spinbot.jsonl
-python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path data/checkpoints/dqn/dqn_weights_curriculum.pt --log-path logs/eval/eval_ramfire.jsonl
-python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path data/checkpoints/dqn/dqn_weights_curriculum.pt --log-path logs/eval/eval_trackfire.jsonl
-python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path data/checkpoints/dqn/dqn_weights_curriculum.pt --log-path logs/eval/eval_velocitybot.jsonl
-python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path data/checkpoints/dqn/dqn_weights_curriculum.pt --log-path logs/eval/eval_crazy.jsonl
-python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path data/checkpoints/dqn/dqn_weights_curriculum.pt --log-path logs/eval/eval_corners.jsonl
-python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path data/checkpoints/dqn/dqn_weights_curriculum.pt --log-path logs/eval/eval_target.jsonl
-python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path data/checkpoints/dqn/dqn_weights_curriculum.pt --log-path logs/eval/eval_fire.jsonl
-python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path data/checkpoints/dqn/dqn_weights_curriculum.pt --log-path logs/eval/eval_myfirstbot.jsonl
+python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path bots/python/dqn/checkpoints/dqn_weights_curriculum.pt --log-path bots/python/dqn/logs/eval/eval_walls.jsonl
+python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path bots/python/dqn/checkpoints/dqn_weights_curriculum.pt --log-path bots/python/dqn/logs/eval/eval_spinbot.jsonl
+python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path bots/python/dqn/checkpoints/dqn_weights_curriculum.pt --log-path bots/python/dqn/logs/eval/eval_ramfire.jsonl
+python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path bots/python/dqn/checkpoints/dqn_weights_curriculum.pt --log-path bots/python/dqn/logs/eval/eval_trackfire.jsonl
+python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path bots/python/dqn/checkpoints/dqn_weights_curriculum.pt --log-path bots/python/dqn/logs/eval/eval_velocitybot.jsonl
+python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path bots/python/dqn/checkpoints/dqn_weights_curriculum.pt --log-path bots/python/dqn/logs/eval/eval_crazy.jsonl
+python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path bots/python/dqn/checkpoints/dqn_weights_curriculum.pt --log-path bots/python/dqn/logs/eval/eval_corners.jsonl
+python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path bots/python/dqn/checkpoints/dqn_weights_curriculum.pt --log-path bots/python/dqn/logs/eval/eval_target.jsonl
+python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path bots/python/dqn/checkpoints/dqn_weights_curriculum.pt --log-path bots/python/dqn/logs/eval/eval_fire.jsonl
+python3 -m bots.python.dqn.runtime.run_bot --eval --eval-epsilon 0.0 --weights-path bots/python/dqn/checkpoints/dqn_weights_curriculum.pt --log-path bots/python/dqn/logs/eval/eval_myfirstbot.jsonl
 
 ============================================================
 OPPONENT COMMANDS (TERMINAL B, run one at a time)

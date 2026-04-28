@@ -1,0 +1,19 @@
+{
+  "gameType": "classic",
+  "arenaWidth": 1200,
+  "arenaHeight": 1200,
+  "numberOfRounds": 100,
+  "gunCoolingRate": 0.1,
+  "maxInactivityTurns": 450,
+  "turnTimeout": 30000,
+  "bots": [
+    {
+      "name": "Jacob3_0",
+      "version": "generated"
+    },
+    {
+      "name": "SarsaBot",
+      "version": "generated"
+    }
+  ]
+}
