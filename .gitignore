@@ -31,17 +31,17 @@ Thumbs.db
 *.orig
 
 # Runtime-generated artifacts
-logs/**/*
+# logs/**/*
 data/checkpoints/**/*
 data/q_tables/**/*.json
 data/exports/**/*
 
 # Keep directory structure
-!logs/.gitkeep
-!logs/dqn/.gitkeep
-!logs/ppo/.gitkeep
-!logs/sarsa/.gitkeep
-!logs/eval/.gitkeep
+# !logs/.gitkeep
+# !logs/dqn/.gitkeep
+# !logs/ppo/.gitkeep
+# !logs/sarsa/.gitkeep
+# !logs/eval/.gitkeep
 !data/checkpoints/.gitkeep
 !data/checkpoints/dqn/.gitkeep
 !data/checkpoints/ppo/.gitkeep

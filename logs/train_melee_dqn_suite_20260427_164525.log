@@ -1,0 +1,435 @@
+Apr 27, 2026 5:41:09 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Starting battle: rounds=100, bots=2
+Apr 27, 2026 5:41:10 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;21m              ___________[0m
+Apr 27, 2026 5:41:10 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;21m             /           |[0m[1m[38;5;102m[[[]========((()[0m
+Apr 27, 2026 5:41:10 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;21m   _________|____________|___________[0m
+Apr 27, 2026 5:41:10 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m _[0m[1m[38;5;21m/[0m[1m[38;5;102m_[0m[1m[38;5;21m________________________________[0m[1m[38;5;102m_[0m[1m[38;5;21m\[0m[1m[38;5;102m_[0m
+Apr 27, 2026 5:41:10 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m/ _ ) ___  ___  ___  ___  ___  ___ / ,_|[0m
+Apr 27, 2026 5:41:10 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m\_\_\/ _ \| __)/ _ \/ __// _ \| _ \\__|[0m
+Apr 27, 2026 5:41:10 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m     \___/|___)\___/\___|\___/|___/[0m
+Apr 27, 2026 5:41:10 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 
+Apr 27, 2026 5:41:10 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[32m          Robocode Tank Royale[0m
+Apr 27, 2026 5:41:10 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 
+Apr 27, 2026 5:41:10 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] Robocode Tank Royale Server 0.38.2
+Apr 27, 2026 5:41:10 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:41:10.182 [32m[INFO][39m Server secrets: [32mENABLED[39m (controllers=1, bots=1)
+Apr 27, 2026 5:41:10 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:41:10.222 [32m[INFO][39m Starting server on port 60769 with supporting game type(s): classic
+Apr 27, 2026 5:41:10 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:41:10.817 [32m[INFO][39m Observer joined: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 5:41:10 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Booting bots...
+Apr 27, 2026 5:41:10 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:41:10.818 [32m[INFO][39m Controller joined: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 5:41:11 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] 7544;/Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_jacob3_0/MeleeDQN
+Apr 27, 2026 5:41:11 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] 7545;/Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_jacob3_0/Jacob3_0
+Apr 27, 2026 5:41:13 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:41:13.460 [32m[INFO][39m Bot joined: MeleeDQN 1.0.0
+Apr 27, 2026 5:41:13 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:41:13.611 [32m[INFO][39m Bot joined: Jacob3_0 1.0.0
+Apr 27, 2026 5:41:13 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Starting game...
+Apr 27, 2026 5:41:13 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:41:13.629 [32m[INFO][39m Bot ready: MeleeDQN 1.0.0
+Apr 27, 2026 5:41:13 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:41:13.629 [32m[INFO][39m Bot ready: Jacob3_0 1.0.0
+Apr 27, 2026 5:41:13 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:41:13.630 [32m[INFO][39m Starting game
+Apr 27, 2026 5:41:13 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Battle started successfully
+Apr 27, 2026 5:58:12 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:58:12.465 [32m[INFO][39m Game ended
+Apr 27, 2026 5:58:12 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync$lambda$7
+INFO: Battle finished, cleaning up...
+Apr 27, 2026 5:58:12 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:58:12.501 [32m[INFO][39m Bot left: MeleeDQN 1.0.0
+Apr 27, 2026 5:58:12 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:58:12.504 [32m[INFO][39m Bot left: Jacob3_0 1.0.0
+Apr 27, 2026 5:58:12 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:58:12.511 [32m[INFO][39m Observer left: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 5:58:12 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:58:12.511 [32m[INFO][39m Controller left: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 5:58:12 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:58:12.512 [32m[INFO][39m Aborting game
+Apr 27, 2026 5:58:12 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:58:12.513 [32m[INFO][39m Stopping server
+[royale_harness] scenario=melee_dqn_vs_jacob3_0 config=/Users/jacobbecker/CPS485_RoboCode/configs/robocode/melee_dqn_vs_jacob3_0.json
+{"rounds":100,"arenaWidth":800,"arenaHeight":600,"results":[{"name":"Jacob3_0","version":"1.0.0","rank":1,"totalScore":14037,"survivalScore":4400,"lastSurvivorBonus":880,"bulletDamageScore":7386,"bulletKillBonus":1234,"ramDamageScore":108,"ramKillBonus":29,"firstPlaces":88,"secondPlaces":12,"thirdPlaces":0},{"name":"MeleeDQN","version":"1.0.0","rank":2,"totalScore":776,"survivalScore":600,"lastSurvivorBonus":120,"bulletDamageScore":26,"bulletKillBonus":0,"ramDamageScore":30,"ramKillBonus":0,"firstPlaces":12,"secondPlaces":88,"thirdPlaces":0}]}
+Apr 27, 2026 5:58:14 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Starting battle: rounds=100, bots=2
+Apr 27, 2026 5:58:14 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;21m              ___________[0m
+Apr 27, 2026 5:58:14 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;21m             /           |[0m[1m[38;5;102m[[[]========((()[0m
+Apr 27, 2026 5:58:14 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;21m   _________|____________|___________[0m
+Apr 27, 2026 5:58:14 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m _[0m[1m[38;5;21m/[0m[1m[38;5;102m_[0m[1m[38;5;21m________________________________[0m[1m[38;5;102m_[0m[1m[38;5;21m\[0m[1m[38;5;102m_[0m
+Apr 27, 2026 5:58:14 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m/ _ ) ___  ___  ___  ___  ___  ___ / ,_|[0m
+Apr 27, 2026 5:58:14 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m\_\_\/ _ \| __)/ _ \/ __// _ \| _ \\__|[0m
+Apr 27, 2026 5:58:14 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m     \___/|___)\___/\___|\___/|___/[0m
+Apr 27, 2026 5:58:14 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 
+Apr 27, 2026 5:58:14 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[32m          Robocode Tank Royale[0m
+Apr 27, 2026 5:58:14 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 
+Apr 27, 2026 5:58:14 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] Robocode Tank Royale Server 0.38.2
+Apr 27, 2026 5:58:14 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:58:14.715 [32m[INFO][39m Server secrets: [32mENABLED[39m (controllers=1, bots=1)
+Apr 27, 2026 5:58:14 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:58:14.756 [32m[INFO][39m Starting server on port 60884 with supporting game type(s): classic
+Apr 27, 2026 5:58:15 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:58:15.343 [32m[INFO][39m Observer joined: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 5:58:15 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Booting bots...
+Apr 27, 2026 5:58:15 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:58:15.347 [32m[INFO][39m Controller joined: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 5:58:15 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] 7551;/Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:15 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] 7552;/Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/SarsaBot
+Apr 27, 2026 5:58:16 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:58:16.207 [32m[INFO][39m Bot joined: SarsaBot 1.0
+Apr 27, 2026 5:58:17 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:58:17.818 [32m[INFO][39m Bot joined: MeleeDQN 1.0.0
+Apr 27, 2026 5:58:17 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Starting game...
+Apr 27, 2026 5:58:17 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:58:17.835 [32m[INFO][39m Bot ready: MeleeDQN 1.0.0
+Apr 27, 2026 5:58:17 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:58:17.835 [32m[INFO][39m Bot ready: SarsaBot 1.0
+Apr 27, 2026 5:58:17 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:58:17.836 [32m[INFO][39m Starting game
+Apr 27, 2026 5:58:17 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Battle started successfully
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] Exception in thread Thread-8 (runnable):
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] Traceback (most recent call last):
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]     self.run()
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py", line 1010, in run
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]     self._target(*self._args, **self._kwargs)
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/robocode_tank_royale/bot_api/internal/base_bot_internals.py", line 298, in runnable
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]     bot.run()
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]   File "/Users/jacobbecker/CPS485_RoboCode/MeleeDQN/runtime/melee_dqn_bot.py", line 673, in run
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]     action_id = self._request_action(state)
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]   File "/Users/jacobbecker/CPS485_RoboCode/MeleeDQN/runtime/melee_dqn_bot.py", line 732, in _request_action
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]     self.local_agent.push_transition(self.prev_state, self.prev_action, state, reward, False)
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]   File "/Users/jacobbecker/CPS485_RoboCode/MeleeDQN/agent/dqn_agent.py", line 110, in push_transition
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]     self.train_step()
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]   File "/Users/jacobbecker/CPS485_RoboCode/MeleeDQN/agent/dqn_agent.py", line 133, in train_step
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]     loss.backward()
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/_tensor.py", line 648, in backward
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]     torch.autograd.backward(
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/autograd/__init__.py", line 353, in backward
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]     _engine_run_backward(
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/autograd/graph.py", line 824, in _engine_run_backward
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_vs_sarsa/MeleeDQN
+Apr 27, 2026 5:58:53 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.FloatTensor [256, 15]], which is output 0 of AsStridedBackward0, is at version 4; expected version 3 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+Apr 27, 2026 6:10:45 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:45.105 [32m[INFO][39m Game ended
+Apr 27, 2026 6:10:45 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync$lambda$7
+INFO: Battle finished, cleaning up...
+Apr 27, 2026 6:10:45 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:45.141 [32m[INFO][39m Bot left: SarsaBot 1.0
+Apr 27, 2026 6:10:45 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:45.143 [32m[INFO][39m Bot left: MeleeDQN 1.0.0
+Apr 27, 2026 6:10:45 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:45.147 [32m[INFO][39m Observer left: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 6:10:45 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:45.147 [32m[INFO][39m Controller left: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 6:10:45 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:45.149 [32m[INFO][39m Aborting game
+Apr 27, 2026 6:10:45 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:45.149 [32m[INFO][39m Stopping server
+[royale_harness] scenario=melee_dqn_vs_sarsa config=/Users/jacobbecker/CPS485_RoboCode/configs/robocode/melee_dqn_vs_sarsa.json
+{"rounds":100,"arenaWidth":800,"arenaHeight":600,"results":[{"name":"SarsaBot","version":"1.0","rank":1,"totalScore":16007,"survivalScore":4900,"lastSurvivorBonus":980,"bulletDamageScore":8550,"bulletKillBonus":1568,"ramDamageScore":8,"ramKillBonus":0,"firstPlaces":98,"secondPlaces":2,"thirdPlaces":0},{"name":"MeleeDQN","version":"1.0.0","rank":2,"totalScore":364,"survivalScore":100,"lastSurvivorBonus":20,"bulletDamageScore":10,"bulletKillBonus":0,"ramDamageScore":234,"ramKillBonus":0,"firstPlaces":2,"secondPlaces":98,"thirdPlaces":0}]}
+Apr 27, 2026 6:10:47 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Starting battle: rounds=100, bots=5
+Apr 27, 2026 6:10:47 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;21m              ___________[0m
+Apr 27, 2026 6:10:47 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;21m             /           |[0m[1m[38;5;102m[[[]========((()[0m
+Apr 27, 2026 6:10:47 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;21m   _________|____________|___________[0m
+Apr 27, 2026 6:10:47 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m _[0m[1m[38;5;21m/[0m[1m[38;5;102m_[0m[1m[38;5;21m________________________________[0m[1m[38;5;102m_[0m[1m[38;5;21m\[0m[1m[38;5;102m_[0m
+Apr 27, 2026 6:10:47 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m/ _ ) ___  ___  ___  ___  ___  ___ / ,_|[0m
+Apr 27, 2026 6:10:47 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m\_\_\/ _ \| __)/ _ \/ __// _ \| _ \\__|[0m
+Apr 27, 2026 6:10:47 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m     \___/|___)\___/\___|\___/|___/[0m
+Apr 27, 2026 6:10:47 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 
+Apr 27, 2026 6:10:47 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[32m          Robocode Tank Royale[0m
+Apr 27, 2026 6:10:47 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 
+Apr 27, 2026 6:10:47 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] Robocode Tank Royale Server 0.38.2
+Apr 27, 2026 6:10:47 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:47.349 [32m[INFO][39m Server secrets: [32mENABLED[39m (controllers=1, bots=1)
+Apr 27, 2026 6:10:47 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:47.388 [32m[INFO][39m Starting server on port 60996 with supporting game type(s): classic
+Apr 27, 2026 6:10:47 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:47.981 [32m[INFO][39m Observer joined: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 6:10:47 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Booting bots...
+Apr 27, 2026 6:10:47 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:47.983 [32m[INFO][39m Controller joined: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 6:10:48 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] 7559;/Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/MeleeDQN
+Apr 27, 2026 6:10:48 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] 7560;/Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/Jacob3_0
+Apr 27, 2026 6:10:48 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] 7561;/Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/PPOBot
+Apr 27, 2026 6:10:48 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] 7562;/Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/SarsaBot
+Apr 27, 2026 6:10:48 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] 7563;/Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:49 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:49.390 [32m[INFO][39m Bot joined: SarsaBot 1.0
+Apr 27, 2026 6:10:49 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:49 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] <frozen runpy>:128: RuntimeWarning: 'NeuroEvoMelee.runtime.neuroevo_melee_bot' found in sys.modules after import of package 'NeuroEvoMelee.runtime', but prior to execution of 'NeuroEvoMelee.runtime.neuroevo_melee_bot'; this may result in unpredictable behaviour
+Apr 27, 2026 6:10:49 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:49.638 [32m[INFO][39m Bot joined: NeuroEvoMelee 0.1.0
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:51.184 [32m[INFO][39m Bot joined: MeleeDQN 1.0.0
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:51.330 [32m[INFO][39m Bot joined: Jacob3_0 1.0.0
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:51.395 [32m[INFO][39m Bot joined: PPOBot 1.0
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Starting game...
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:51.413 [32m[INFO][39m Bot ready: NeuroEvoMelee 0.1.0
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:51.413 [32m[INFO][39m Bot ready: SarsaBot 1.0
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:51.413 [32m[INFO][39m Bot ready: MeleeDQN 1.0.0
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:51.414 [32m[INFO][39m Bot ready: PPOBot 1.0
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:51.414 [32m[INFO][39m Bot ready: Jacob3_0 1.0.0
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:51.415 [32m[INFO][39m Starting game
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Battle started successfully
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] Traceback (most recent call last):
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/robocode_tank_royale/bot_api/internal/websocket_handler.py", line 118, in receive_messages
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]     await self.process_message(message)
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/robocode_tank_royale/bot_api/internal/websocket_handler.py", line 136, in process_message
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]     await self.handle_round_started(json_msg)
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/robocode_tank_royale/bot_api/internal/websocket_handler.py", line 193, in handle_round_started
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]     self.bot_event_handlers.on_round_started.publish(round_started_event)
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/robocode_tank_royale/bot_api/internal/event_handler.py", line 110, in publish
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]     entry.subscriber(event_data)
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]   File "/Users/jacobbecker/CPS485_RoboCode/NeuroEvoMelee/runtime/neuroevo_melee_bot.py", line 69, in on_round_started
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]     self.last_energy = float(self.energy)
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]                              ^^^^^^^^^^^
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/robocode_tank_royale/bot_api/base_bot.py", line 252, in energy
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]     bot_state = self._internals.get_current_tick_or_throw().bot_state
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/robocode_tank_royale/bot_api/internal/base_bot_internals.py", line 209, in get_current_tick_or_throw
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]     return self.data.current_tick_or_throw
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]   File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/robocode_tank_royale/bot_api/internal/base_bot_internal_data.py", line 95, in current_tick_or_throw
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER]     raise BotException(TICK_NOT_AVAILABLE_MSG)
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] ERROR: Bot directory: /Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_melee_dqn_suite/melee_dqn_4bot/NeuroEvoMelee
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] robocode_tank_royale.bot_api.bot_exception.BotException: Tick event is not available
+Apr 27, 2026 6:10:51 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:10:51.486 [32m[INFO][39m Bot left: NeuroEvoMelee 0.1.0
+Apr 27, 2026 6:18:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:18:25.690 [32m[INFO][39m Game ended
+Apr 27, 2026 6:18:25 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync$lambda$7
+INFO: Battle finished, cleaning up...
+Apr 27, 2026 6:18:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:18:25.703 [32m[INFO][39m Bot left: SarsaBot 1.0
+Apr 27, 2026 6:18:25 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] stopped 7562
+Apr 27, 2026 6:18:25 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] stopped 7563
+Apr 27, 2026 6:18:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:18:25.707 [32m[INFO][39m Bot left: PPOBot 1.0
+Apr 27, 2026 6:18:25 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] stopped 7561
+Apr 27, 2026 6:18:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:18:25.708 [32m[INFO][39m Bot left: MeleeDQN 1.0.0
+Apr 27, 2026 6:18:25 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] stopped 7559
+Apr 27, 2026 6:18:25 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] stopped 7559
+Apr 27, 2026 6:18:25 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] stopped 7560
+Apr 27, 2026 6:18:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:18:25.708 [32m[INFO][39m Bot left: Jacob3_0 1.0.0
+Apr 27, 2026 6:18:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:18:25.712 [32m[INFO][39m Observer left: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 6:18:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:18:25.712 [32m[INFO][39m Controller left: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 6:18:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:18:25.713 [32m[INFO][39m Stopping server
+Apr 27, 2026 6:18:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 18:18:25.713 [32m[INFO][39m Aborting game
+[royale_harness] scenario=melee_dqn_4bot config=/Users/jacobbecker/CPS485_RoboCode/configs/robocode/melee_dqn_4bot.json
+{"rounds":100,"arenaWidth":800,"arenaHeight":600,"results":[{"name":"Jacob3_0","version":"1.0.0","rank":1,"totalScore":37684,"survivalScore":15650,"lastSurvivorBonus":2280,"bulletDamageScore":17048,"bulletKillBonus":1747,"ramDamageScore":811,"ramKillBonus":148,"firstPlaces":47,"secondPlaces":31,"thirdPlaces":13},{"name":"SarsaBot","version":"1.0","rank":2,"totalScore":35938,"survivalScore":12900,"lastSurvivorBonus":1040,"bulletDamageScore":19916,"bulletKillBonus":1957,"ramDamageScore":125,"ramKillBonus":0,"firstPlaces":32,"secondPlaces":43,"thirdPlaces":18},{"name":"PPOBot","version":"1.0","rank":3,"totalScore":28816,"survivalScore":9500,"lastSurvivorBonus":560,"bulletDamageScore":16306,"bulletKillBonus":1763,"ramDamageScore":623,"ramKillBonus":64,"firstPlaces":21,"secondPlaces":23,"thirdPlaces":32},{"name":"MeleeDQN","version":"1.0.0","rank":4,"totalScore":9794,"survivalScore":9050,"lastSurvivorBonus":80,"bulletDamageScore":288,"bulletKillBonus":3,"ramDamageScore":372,"ramKillBonus":0,"firstPlaces":0,"secondPlaces":3,"thirdPlaces":31},{"name":"NeuroEvoMelee","version":"0.1.0","rank":5,"totalScore":2790,"survivalScore":2750,"lastSurvivorBonus":40,"bulletDamageScore":0,"bulletKillBonus":0,"ramDamageScore":0,"ramKillBonus":0,"firstPlaces":0,"secondPlaces":1,"thirdPlaces":5}]}
+JSONL_PATH=/Users/jacobbecker/CPS485_RoboCode/logs/train_melee_dqn_suite_20260427_164525.jsonl

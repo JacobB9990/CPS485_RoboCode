@@ -1,0 +1,213 @@
+Apr 27, 2026 5:25:34 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Starting battle: rounds=100, bots=2
+Apr 27, 2026 5:25:35 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;21m              ___________[0m
+Apr 27, 2026 5:25:35 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;21m             /           |[0m[1m[38;5;102m[[[]========((()[0m
+Apr 27, 2026 5:25:35 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;21m   _________|____________|___________[0m
+Apr 27, 2026 5:25:35 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m _[0m[1m[38;5;21m/[0m[1m[38;5;102m_[0m[1m[38;5;21m________________________________[0m[1m[38;5;102m_[0m[1m[38;5;21m\[0m[1m[38;5;102m_[0m
+Apr 27, 2026 5:25:35 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m/ _ ) ___  ___  ___  ___  ___  ___ / ,_|[0m
+Apr 27, 2026 5:25:35 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m\_\_\/ _ \| __)/ _ \/ __// _ \| _ \\__|[0m
+Apr 27, 2026 5:25:35 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m     \___/|___)\___/\___|\___/|___/[0m
+Apr 27, 2026 5:25:35 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 
+Apr 27, 2026 5:25:35 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[32m          Robocode Tank Royale[0m
+Apr 27, 2026 5:25:35 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 
+Apr 27, 2026 5:25:35 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] Robocode Tank Royale Server 0.38.2
+Apr 27, 2026 5:25:35 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:25:35.021 [32m[INFO][39m Server secrets: [32mENABLED[39m (controllers=1, bots=1)
+Apr 27, 2026 5:25:35 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:25:35.061 [32m[INFO][39m Starting server on port 60737 with supporting game type(s): classic
+Apr 27, 2026 5:25:35 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Booting bots...
+Apr 27, 2026 5:25:35 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:25:35.652 [32m[INFO][39m Observer joined: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 5:25:35 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:25:35.653 [32m[INFO][39m Controller joined: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 5:25:35 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] 7511;/Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_jacob3_0_mapsize/jacob3_0_sarsa_small/Jacob3_0
+Apr 27, 2026 5:25:35 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] 7512;/Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_jacob3_0_mapsize/jacob3_0_sarsa_small/SarsaBot
+Apr 27, 2026 5:25:36 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:25:36.606 [32m[INFO][39m Bot joined: SarsaBot 1.0
+Apr 27, 2026 5:25:38 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:25:38.169 [32m[INFO][39m Bot joined: Jacob3_0 1.0.0
+Apr 27, 2026 5:25:38 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Starting game...
+Apr 27, 2026 5:25:38 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:25:38.186 [32m[INFO][39m Bot ready: Jacob3_0 1.0.0
+Apr 27, 2026 5:25:38 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:25:38.186 [32m[INFO][39m Bot ready: SarsaBot 1.0
+Apr 27, 2026 5:25:38 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:25:38.187 [32m[INFO][39m Starting game
+Apr 27, 2026 5:25:38 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Battle started successfully
+Apr 27, 2026 5:30:23 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:30:23.032 [32m[INFO][39m Game ended
+Apr 27, 2026 5:30:23 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync$lambda$7
+INFO: Battle finished, cleaning up...
+Apr 27, 2026 5:30:23 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:30:23.044 [32m[INFO][39m Bot left: SarsaBot 1.0
+Apr 27, 2026 5:30:23 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:30:23.047 [32m[INFO][39m Bot left: Jacob3_0 1.0.0
+Apr 27, 2026 5:30:23 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:30:23.051 [32m[INFO][39m Observer left: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 5:30:23 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:30:23.052 [32m[INFO][39m Controller left: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 5:30:23 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:30:23.052 [32m[INFO][39m Aborting game
+Apr 27, 2026 5:30:23 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:30:23.052 [32m[INFO][39m Stopping server
+[royale_harness] scenario=jacob3_0_sarsa_small config=/Users/jacobbecker/CPS485_RoboCode/configs/robocode/jacob3_0_sarsa_small.json
+{"rounds":100,"arenaWidth":400,"arenaHeight":400,"results":[{"name":"Jacob3_0","version":"1.0.0","rank":1,"totalScore":14605,"survivalScore":3250,"lastSurvivorBonus":650,"bulletDamageScore":8956,"bulletKillBonus":1343,"ramDamageScore":377,"ramKillBonus":29,"firstPlaces":65,"secondPlaces":35,"thirdPlaces":0},{"name":"SarsaBot","version":"1.0","rank":2,"totalScore":10167,"survivalScore":1750,"lastSurvivorBonus":350,"bulletDamageScore":7280,"bulletKillBonus":770,"ramDamageScore":17,"ramKillBonus":0,"firstPlaces":35,"secondPlaces":65,"thirdPlaces":0}]}
+Apr 27, 2026 5:30:24 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Starting battle: rounds=100, bots=2
+Apr 27, 2026 5:30:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;21m              ___________[0m
+Apr 27, 2026 5:30:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;21m             /           |[0m[1m[38;5;102m[[[]========((()[0m
+Apr 27, 2026 5:30:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;21m   _________|____________|___________[0m
+Apr 27, 2026 5:30:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m _[0m[1m[38;5;21m/[0m[1m[38;5;102m_[0m[1m[38;5;21m________________________________[0m[1m[38;5;102m_[0m[1m[38;5;21m\[0m[1m[38;5;102m_[0m
+Apr 27, 2026 5:30:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m/ _ ) ___  ___  ___  ___  ___  ___ / ,_|[0m
+Apr 27, 2026 5:30:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m\_\_\/ _ \| __)/ _ \/ __// _ \| _ \\__|[0m
+Apr 27, 2026 5:30:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m     \___/|___)\___/\___|\___/|___/[0m
+Apr 27, 2026 5:30:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 
+Apr 27, 2026 5:30:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[32m          Robocode Tank Royale[0m
+Apr 27, 2026 5:30:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 
+Apr 27, 2026 5:30:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] Robocode Tank Royale Server 0.38.2
+Apr 27, 2026 5:30:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:30:25.270 [32m[INFO][39m Server secrets: [32mENABLED[39m (controllers=1, bots=1)
+Apr 27, 2026 5:30:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:30:25.310 [32m[INFO][39m Starting server on port 60747 with supporting game type(s): classic
+Apr 27, 2026 5:30:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:30:25.899 [32m[INFO][39m Observer joined: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 5:30:25 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Booting bots...
+Apr 27, 2026 5:30:25 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:30:25.902 [32m[INFO][39m Controller joined: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 5:30:26 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] 7518;/Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_jacob3_0_mapsize/jacob3_0_sarsa_medium/Jacob3_0
+Apr 27, 2026 5:30:26 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] 7519;/Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_jacob3_0_mapsize/jacob3_0_sarsa_medium/SarsaBot
+Apr 27, 2026 5:30:26 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:30:26.820 [32m[INFO][39m Bot joined: SarsaBot 1.0
+Apr 27, 2026 5:30:28 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:30:28.451 [32m[INFO][39m Bot joined: Jacob3_0 1.0.0
+Apr 27, 2026 5:30:28 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Starting game...
+Apr 27, 2026 5:30:28 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:30:28.468 [32m[INFO][39m Bot ready: Jacob3_0 1.0.0
+Apr 27, 2026 5:30:28 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:30:28.468 [32m[INFO][39m Bot ready: SarsaBot 1.0
+Apr 27, 2026 5:30:28 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:30:28.470 [32m[INFO][39m Starting game
+Apr 27, 2026 5:30:28 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Battle started successfully
+Apr 27, 2026 5:35:03 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:35:03.795 [32m[INFO][39m Game ended
+Apr 27, 2026 5:35:03 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync$lambda$7
+INFO: Battle finished, cleaning up...
+Apr 27, 2026 5:35:03 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:35:03.827 [32m[INFO][39m Bot left: SarsaBot 1.0
+Apr 27, 2026 5:35:03 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:35:03.829 [32m[INFO][39m Bot left: Jacob3_0 1.0.0
+Apr 27, 2026 5:35:03 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:35:03.833 [32m[INFO][39m Observer left: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 5:35:03 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:35:03.834 [32m[INFO][39m Controller left: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 5:35:03 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:35:03.835 [32m[INFO][39m Aborting game
+Apr 27, 2026 5:35:03 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:35:03.835 [32m[INFO][39m Stopping server
+[royale_harness] scenario=jacob3_0_sarsa_medium config=/Users/jacobbecker/CPS485_RoboCode/configs/robocode/jacob3_0_sarsa_medium.json
+{"rounds":100,"arenaWidth":800,"arenaHeight":800,"results":[{"name":"Jacob3_0","version":"1.0.0","rank":1,"totalScore":14148,"survivalScore":3500,"lastSurvivorBonus":700,"bulletDamageScore":8470,"bulletKillBonus":1362,"ramDamageScore":115,"ramKillBonus":0,"firstPlaces":70,"secondPlaces":30,"thirdPlaces":0},{"name":"SarsaBot","version":"1.0","rank":2,"totalScore":9096,"survivalScore":1500,"lastSurvivorBonus":300,"bulletDamageScore":6668,"bulletKillBonus":619,"ramDamageScore":8,"ramKillBonus":0,"firstPlaces":30,"secondPlaces":70,"thirdPlaces":0}]}
+Apr 27, 2026 5:35:05 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Starting battle: rounds=100, bots=2
+Apr 27, 2026 5:35:06 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;21m              ___________[0m
+Apr 27, 2026 5:35:06 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;21m             /           |[0m[1m[38;5;102m[[[]========((()[0m
+Apr 27, 2026 5:35:06 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;21m   _________|____________|___________[0m
+Apr 27, 2026 5:35:06 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m _[0m[1m[38;5;21m/[0m[1m[38;5;102m_[0m[1m[38;5;21m________________________________[0m[1m[38;5;102m_[0m[1m[38;5;21m\[0m[1m[38;5;102m_[0m
+Apr 27, 2026 5:35:06 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m/ _ ) ___  ___  ___  ___  ___  ___ / ,_|[0m
+Apr 27, 2026 5:35:06 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m\_\_\/ _ \| __)/ _ \/ __// _ \| _ \\__|[0m
+Apr 27, 2026 5:35:06 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[38;5;102m     \___/|___)\___/\___|\___/|___/[0m
+Apr 27, 2026 5:35:06 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 
+Apr 27, 2026 5:35:06 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] [1m[32m          Robocode Tank Royale[0m
+Apr 27, 2026 5:35:06 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 
+Apr 27, 2026 5:35:06 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] Robocode Tank Royale Server 0.38.2
+Apr 27, 2026 5:35:06 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:35:06.044 [32m[INFO][39m Server secrets: [32mENABLED[39m (controllers=1, bots=1)
+Apr 27, 2026 5:35:06 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:35:06.083 [32m[INFO][39m Starting server on port 60757 with supporting game type(s): classic
+Apr 27, 2026 5:35:06 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:35:06.674 [32m[INFO][39m Observer joined: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 5:35:06 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Booting bots...
+Apr 27, 2026 5:35:06 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:35:06.675 [32m[INFO][39m Controller joined: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 5:35:06 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] 7524;/Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_jacob3_0_mapsize/jacob3_0_sarsa_large/Jacob3_0
+Apr 27, 2026 5:35:06 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] 7525;/Users/jacobbecker/CPS485_RoboCode/logs/_runtime_bots/20260427_164525/train_jacob3_0_mapsize/jacob3_0_sarsa_large/SarsaBot
+Apr 27, 2026 5:35:07 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:35:07.563 [32m[INFO][39m Bot joined: SarsaBot 1.0
+Apr 27, 2026 5:35:09 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:35:09.114 [32m[INFO][39m Bot joined: Jacob3_0 1.0.0
+Apr 27, 2026 5:35:09 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Starting game...
+Apr 27, 2026 5:35:09 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:35:09.130 [32m[INFO][39m Bot ready: SarsaBot 1.0
+Apr 27, 2026 5:35:09 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:35:09.130 [32m[INFO][39m Bot ready: Jacob3_0 1.0.0
+Apr 27, 2026 5:35:09 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:35:09.131 [32m[INFO][39m Starting game
+Apr 27, 2026 5:35:09 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync
+INFO: Battle started successfully
+Apr 27, 2026 5:41:07 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:41:07.904 [32m[INFO][39m Game ended
+Apr 27, 2026 5:41:07 PM dev.robocode.tankroyale.runner.BattleRunner startBattleAsync$lambda$7
+INFO: Battle finished, cleaning up...
+Apr 27, 2026 5:41:07 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:41:07.916 [32m[INFO][39m Bot left: SarsaBot 1.0
+Apr 27, 2026 5:41:07 PM dev.robocode.tankroyale.runner.internal.BooterManager startStdoutReader$lambda$0$0$0
+INFO: [BOOTER] stopped 7525
+Apr 27, 2026 5:41:07 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:41:07.918 [32m[INFO][39m Bot left: Jacob3_0 1.0.0
+Apr 27, 2026 5:41:07 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:41:07.922 [32m[INFO][39m Observer left: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 5:41:07 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:41:07.922 [32m[INFO][39m Controller left: Robocode Tank Royale Battle Runner 0.38.2
+Apr 27, 2026 5:41:07 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:41:07.922 [32m[INFO][39m Aborting game
+Apr 27, 2026 5:41:07 PM dev.robocode.tankroyale.runner.internal.ServerManager startStdoutReader$lambda$0$0$0
+INFO: [SERVER] 2026-04-27 17:41:07.923 [32m[INFO][39m Stopping server
+[royale_harness] scenario=jacob3_0_sarsa_large config=/Users/jacobbecker/CPS485_RoboCode/configs/robocode/jacob3_0_sarsa_large.json
+{"rounds":100,"arenaWidth":1200,"arenaHeight":1200,"results":[{"name":"Jacob3_0","version":"1.0.0","rank":1,"totalScore":11833,"survivalScore":3350,"lastSurvivorBonus":670,"bulletDamageScore":6650,"bulletKillBonus":1098,"ramDamageScore":65,"ramKillBonus":0,"firstPlaces":67,"secondPlaces":33,"thirdPlaces":0},{"name":"SarsaBot","version":"1.0","rank":2,"totalScore":8804,"survivalScore":1650,"lastSurvivorBonus":330,"bulletDamageScore":6156,"bulletKillBonus":659,"ramDamageScore":8,"ramKillBonus":0,"firstPlaces":33,"secondPlaces":67,"thirdPlaces":0}]}
+JSONL_PATH=/Users/jacobbecker/CPS485_RoboCode/logs/train_jacob3_0_mapsize_20260427_164525.jsonl

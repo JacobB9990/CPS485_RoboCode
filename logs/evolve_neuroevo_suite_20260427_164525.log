@@ -1,0 +1,21 @@
+[NeuroEvoMelee] generation=1 best=0.5117 mean=0.4163 std=0.0422
+[NeuroEvoMelee] generation=2 best=0.5140 mean=0.4515 std=0.0383
+[NeuroEvoMelee] generation=3 best=0.5846 mean=0.4752 std=0.0554
+[NeuroEvoMelee] generation=4 best=0.5879 mean=0.4983 std=0.0549
+[NeuroEvoMelee] generation=5 best=0.5940 mean=0.5099 std=0.0450
+[NeuroEvoMelee] generation=6 best=0.6767 mean=0.5425 std=0.0499
+[NeuroEvoMelee] generation=7 best=0.6589 mean=0.5759 std=0.0389
+[NeuroEvoMelee] generation=8 best=0.6765 mean=0.6006 std=0.0384
+[NeuroEvoMelee] generation=9 best=0.7105 mean=0.6219 std=0.0419
+[NeuroEvoMelee] generation=10 best=0.7231 mean=0.6452 std=0.0279
+[NeuroEvoMelee] generation=11 best=0.7489 mean=0.6429 std=0.0401
+[NeuroEvoMelee] generation=12 best=0.7296 mean=0.6514 std=0.0433
+[NeuroEvoMelee] generation=13 best=0.7184 mean=0.6733 std=0.0308
+[NeuroEvoMelee] generation=14 best=0.7475 mean=0.6913 std=0.0409
+[NeuroEvoMelee] generation=15 best=0.7474 mean=0.7033 std=0.0279
+[NeuroEvoMelee] generation=16 best=0.7652 mean=0.6912 std=0.0432
+[NeuroEvoMelee] generation=17 best=0.7775 mean=0.7120 std=0.0250
+[NeuroEvoMelee] generation=18 best=0.7774 mean=0.7172 std=0.0424
+[NeuroEvoMelee] generation=19 best=0.7927 mean=0.7151 std=0.0427
+[NeuroEvoMelee] generation=20 best=0.7842 mean=0.7192 std=0.0370
+JSONL_PATH=/Users/jacobbecker/CPS485_RoboCode/logs/evolve_neuroevo_suite_20260427_164525.jsonl

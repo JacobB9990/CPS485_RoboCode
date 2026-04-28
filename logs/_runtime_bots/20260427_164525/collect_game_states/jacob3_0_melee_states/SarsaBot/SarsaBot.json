@@ -1,0 +1,10 @@
+{
+  "name": "SarsaBot",
+  "version": "1.0",
+  "authors": [
+    "CPS485"
+  ],
+  "description": "Generated runtime package for SarsaBot",
+  "platform": "Python 3",
+  "programmingLang": "Python"
+}

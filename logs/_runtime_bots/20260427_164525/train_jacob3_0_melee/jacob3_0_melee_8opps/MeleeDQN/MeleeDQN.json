@@ -1,0 +1,10 @@
+{
+  "name": "MeleeDQN",
+  "version": "1.0.0",
+  "authors": [
+    "CPS485"
+  ],
+  "description": "Generated runtime package for MeleeDQN",
+  "platform": "Python 3",
+  "programmingLang": "Python"
+}
